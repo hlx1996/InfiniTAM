@@ -1,0 +1,1484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="infinitam" targetName="roscpp_generate_messages_lisp" />
+      <config projectName="infinitam" targetName="visualization_msgs_generate_messages_cpp" />
+      <config projectName="infinitam" targetName="FernRelocLib" />
+      <config projectName="infinitam" targetName="sensor_msgs_generate_messages_nodejs" />
+      <config projectName="infinitam" targetName="clean_test_results" />
+      <config projectName="infinitam" targetName="std_msgs_generate_messages_cpp" />
+      <config projectName="infinitam" targetName="tf2_msgs_generate_messages_cpp" />
+      <config projectName="infinitam" targetName="std_msgs_generate_messages_nodejs" />
+      <config projectName="infinitam" targetName="gmock" />
+      <config projectName="infinitam" targetName="tf_generate_messages_lisp" />
+      <config projectName="infinitam" targetName="tf_generate_messages_cpp" />
+      <config projectName="infinitam" targetName="visualization_msgs_generate_messages_lisp" />
+      <config projectName="infinitam" targetName="gtest_main" />
+      <config projectName="infinitam" targetName="geometry_msgs_generate_messages_lisp" />
+      <config projectName="infinitam" targetName="actionlib_generate_messages_eus" />
+      <config projectName="infinitam" targetName="geometry_msgs_generate_messages_eus" />
+      <config projectName="infinitam" targetName="tests" />
+      <config projectName="infinitam" targetName="roscpp_generate_messages_eus" />
+      <config projectName="infinitam" targetName="actionlib_msgs_generate_messages_eus" />
+      <config projectName="infinitam" targetName="nav_msgs_generate_messages_nodejs" />
+      <config projectName="infinitam" targetName="tf2_msgs_generate_messages_nodejs" />
+      <config projectName="infinitam" targetName="visualization_msgs_generate_messages_eus" />
+      <config projectName="infinitam" targetName="rosgraph_msgs_generate_messages_cpp" />
+      <config projectName="infinitam" targetName="visualization_msgs_generate_messages_py" />
+      <config projectName="infinitam" targetName="tf_generate_messages_py" />
+      <config projectName="infinitam" targetName="tf_generate_messages_nodejs" />
+      <config projectName="infinitam" targetName="geometry_msgs_generate_messages_nodejs" />
+      <config projectName="infinitam" targetName="actionlib_generate_messages_lisp" />
+      <config projectName="infinitam" targetName="geometry_msgs_generate_messages_py" />
+      <config projectName="infinitam" targetName="std_msgs_generate_messages_lisp" />
+      <config projectName="infinitam" targetName="actionlib_generate_messages_cpp" />
+      <config projectName="infinitam" targetName="gmock_main" />
+      <config projectName="infinitam" targetName="rosgraph_msgs_generate_messages_lisp" />
+      <config projectName="infinitam" targetName="sensor_msgs_generate_messages_py" />
+      <config projectName="infinitam" targetName="sensor_msgs_generate_messages_cpp" />
+      <config projectName="infinitam" targetName="MiniSlamGraphLib" />
+      <config projectName="infinitam" targetName="roscpp_generate_messages_cpp" />
+      <config projectName="infinitam" targetName="actionlib_msgs_generate_messages_cpp" />
+      <config projectName="infinitam" targetName="nav_msgs_generate_messages_cpp" />
+      <config projectName="infinitam" targetName="rosgraph_msgs_generate_messages_eus" />
+      <config projectName="infinitam" targetName="tf2_msgs_generate_messages_py" />
+      <config projectName="infinitam" targetName="doxygen" />
+      <config projectName="infinitam" targetName="download_extra_data" />
+      <config projectName="infinitam" targetName="ITMLib" />
+      <config projectName="infinitam" targetName="roscpp_generate_messages_nodejs" />
+      <config projectName="infinitam" targetName="actionlib_msgs_generate_messages_nodejs" />
+      <config projectName="infinitam" targetName="sensor_msgs_generate_messages_eus" />
+      <config projectName="infinitam" targetName="actionlib_msgs_generate_messages_py" />
+      <config projectName="infinitam" targetName="actionlib_generate_messages_py" />
+      <config projectName="infinitam" targetName="rosgraph_msgs_generate_messages_nodejs" />
+      <config projectName="infinitam" targetName="std_msgs_generate_messages_py" />
+      <config projectName="infinitam" targetName="nav_msgs_generate_messages_eus" />
+      <config projectName="infinitam" targetName="actionlib_msgs_generate_messages_lisp" />
+      <config projectName="infinitam" targetName="std_msgs_generate_messages_eus" />
+      <config projectName="infinitam" targetName="tf2_msgs_generate_messages_eus" />
+      <config projectName="infinitam" targetName="nav_msgs_generate_messages_lisp" />
+      <config projectName="infinitam" targetName="tf2_msgs_generate_messages_lisp" />
+      <config projectName="infinitam" targetName="ORUtils" />
+      <config projectName="infinitam" targetName="run_tests" />
+      <config projectName="infinitam" targetName="tf_generate_messages_eus" />
+      <config projectName="infinitam" targetName="rosgraph_msgs_generate_messages_py" />
+      <config projectName="infinitam" targetName="geometry_msgs_generate_messages_cpp" />
+      <config projectName="infinitam" targetName="visualization_msgs_generate_messages_nodejs" />
+      <config projectName="infinitam" targetName="actionlib_generate_messages_nodejs" />
+      <config projectName="infinitam" targetName="sensor_msgs_generate_messages_lisp" />
+      <config projectName="infinitam" targetName="nav_msgs_generate_messages_py" />
+      <config projectName="infinitam" targetName="infinitam" />
+      <config projectName="infinitam" targetName="roscpp_generate_messages_py" />
+      <config projectName="infinitam" targetName="gtest" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Release" CONFIG_NAME="Release" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="281fa047-0e4e-4a61-965a-829289d67933" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/infinitam.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/CUDACheckCompute.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/FindCSparse.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/FindFFmpeg.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/FindLibRoyale.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/FindOpenNI.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/FindRealSense.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/FindRealSense2.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/Flags.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/LinkFFmpeg.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/LinkGLUT.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/LinkLibRoyale.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/LinkOpenGL.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/LinkOpenNI.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/LinkPNG.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/LinkRealSense.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/LinkRealSense2.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/LinkUVC.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/OfferC++11Support.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/OfferInputMirroring.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/SetCUDAAppTarget.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/SetCUDALibTarget.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/SetLibTarget.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/UseCUDA.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/UseFFmpeg.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/UseGLUT.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/UseKinect2.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/UseLibRoyale.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/UseOpenGL.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/UseOpenMP.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/UseOpenNI.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/UsePNG.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/UseRealSense.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/UseRealSense2.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/UseUVC.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/cuda_compute_capability.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/include/CLIEngine.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/include/InfiniTAMCheck.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/FernRelocLib/CMakeLists.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/FernRelocLib/FernConservatory.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/FernRelocLib/FernConservatory.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/FernRelocLib/PixelUtils.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/FernRelocLib/PoseDatabase.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/FernRelocLib/PoseDatabase.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/FernRelocLib/RelocDatabase.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/FernRelocLib/RelocDatabase.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/FernRelocLib/Relocaliser.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/FernRelocLib/Relocaliser.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Android.mk" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/CMakeLists.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/CPUInstantiations.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/CUDAInstantiations.cu" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Core/ITMBasicEngine.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Core/ITMBasicEngine.tpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Core/ITMBasicSurfelEngine.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Core/ITMBasicSurfelEngine.tpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Core/ITMDenseMapper.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Core/ITMDenseMapper.tpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Core/ITMDenseSurfelMapper.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Core/ITMDenseSurfelMapper.tpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Core/ITMMainEngine.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Core/ITMMultiEngine.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Core/ITMMultiEngine.tpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Core/ITMTrackingController.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/LowLevel/CPU/ITMLowLevelEngine_CPU.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/LowLevel/CPU/ITMLowLevelEngine_CPU.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/LowLevel/CUDA/ITMLowLevelEngine_CUDA.cu" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/LowLevel/CUDA/ITMLowLevelEngine_CUDA.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/LowLevel/ITMLowLevelEngineFactory.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/LowLevel/ITMLowLevelEngineFactory.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/LowLevel/Interface/ITMLowLevelEngine.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/LowLevel/Shared/ITMLowLevelEngine_Shared.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Meshing/CPU/ITMMeshingEngine_CPU.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Meshing/CPU/ITMMeshingEngine_CPU.tpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Meshing/CPU/ITMMultiMeshingEngine_CPU.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Meshing/CPU/ITMMultiMeshingEngine_CPU.tpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Meshing/CUDA/ITMMeshingEngine_CUDA.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Meshing/CUDA/ITMMeshingEngine_CUDA.tcu" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Meshing/CUDA/ITMMultiMeshingEngine_CUDA.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Meshing/CUDA/ITMMultiMeshingEngine_CUDA.tcu" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Meshing/ITMMeshingEngineFactory.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Meshing/ITMMultiMeshingEngineFactory.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Meshing/Interface/ITMMeshingEngine.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Meshing/Interface/ITMMultiMeshingEngine.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Meshing/Shared/ITMMeshingEngine_Shared.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Meshing/Shared/ITMMultiMeshingEngine_Shared.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/MultiScene/ITMActiveMapManager.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/MultiScene/ITMActiveMapManager.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/MultiScene/ITMGlobalAdjustmentEngine.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/MultiScene/ITMGlobalAdjustmentEngine.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/MultiScene/ITMMapGraphManager.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/MultiScene/ITMMapGraphManager.tpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/CPU/ITMSceneReconstructionEngine_CPU.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/CPU/ITMSceneReconstructionEngine_CPU.tpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/CPU/ITMSurfelSceneReconstructionEngine_CPU.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/CPU/ITMSurfelSceneReconstructionEngine_CPU.tpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/CUDA/ITMSceneReconstructionEngine_CUDA.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/CUDA/ITMSceneReconstructionEngine_CUDA.tcu" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/CUDA/ITMSurfelSceneReconstructionEngine_CUDA.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/CUDA/ITMSurfelSceneReconstructionEngine_CUDA.tcu" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/ITMSceneReconstructionEngineFactory.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/ITMSurfelSceneReconstructionEngineFactory.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/ITMSurfelSceneReconstructionEngineFactory.tpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/Interface/ITMSceneReconstructionEngine.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/Interface/ITMSurfelSceneReconstructionEngine.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/Interface/ITMSurfelSceneReconstructionEngine.tpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/Metal/ITMSceneReconstructionEngine.metal" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/Metal/ITMSceneReconstructionEngine_Metal.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/Metal/ITMSceneReconstructionEngine_Metal.mm" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/Shared/ITMSceneReconstructionEngine_Shared.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/Shared/ITMSurfelSceneReconstructionEngine_Shared.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Swapping/CPU/ITMSwappingEngine_CPU.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Swapping/CPU/ITMSwappingEngine_CPU.tpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Swapping/CUDA/ITMSwappingEngine_CUDA.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Swapping/CUDA/ITMSwappingEngine_CUDA.tcu" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Swapping/ITMSwappingEngineFactory.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Swapping/Interface/ITMSwappingEngine.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Swapping/Metal/ITMSwappingEngine.metal" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Swapping/Metal/ITMSwappingEngine_Metal.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Swapping/Metal/ITMSwappingEngine_Metal.mm" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Swapping/Shared/ITMSwappingEngine_Shared.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/ViewBuilding/CPU/ITMViewBuilder_CPU.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/ViewBuilding/CPU/ITMViewBuilder_CPU.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/ViewBuilding/CUDA/ITMViewBuilder_CUDA.cu" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/ViewBuilding/CUDA/ITMViewBuilder_CUDA.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/ViewBuilding/ITMViewBuilderFactory.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/ViewBuilding/ITMViewBuilderFactory.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/ViewBuilding/Interface/ITMViewBuilder.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/ViewBuilding/Shared/ITMViewBuilder_Shared.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/CPU/ITMMultiVisualisationEngine_CPU.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/CPU/ITMMultiVisualisationEngine_CPU.tpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/CPU/ITMSurfelVisualisationEngine_CPU.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/CPU/ITMSurfelVisualisationEngine_CPU.tpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/CPU/ITMVisualisationEngine_CPU.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/CPU/ITMVisualisationEngine_CPU.tpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/CUDA/ITMMultiVisualisationEngine_CUDA.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/CUDA/ITMMultiVisualisationEngine_CUDA.tcu" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/CUDA/ITMSurfelVisualisationEngine_CUDA.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/CUDA/ITMSurfelVisualisationEngine_CUDA.tcu" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/CUDA/ITMVisualisationEngine_CUDA.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/CUDA/ITMVisualisationEngine_CUDA.tcu" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/CUDA/ITMVisualisationHelpers_CUDA.cu" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/CUDA/ITMVisualisationHelpers_CUDA.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/ITMMultiVisualisationEngineFactory.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/ITMSurfelVisualisationEngineFactory.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/ITMSurfelVisualisationEngineFactory.tpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/ITMVisualisationEngineFactory.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/Interface/ITMMultiVisualisationEngine.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/Interface/ITMSurfelVisualisationEngine.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/Interface/ITMSurfelVisualisationEngine.tpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/Interface/ITMVisualisationEngine.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/Interface/ITMVisualisationEngine.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/Metal/ITMVisualisationEngine.metal" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/Metal/ITMVisualisationEngine_Metal.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/Metal/ITMVisualisationEngine_Metal.mm" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/Shared/ITMSurfelVisualisationEngine_Settings.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/Shared/ITMSurfelVisualisationEngine_Shared.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/Shared/ITMVisualisationEngine_Shared.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/ITMLibDefines.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/MetalInstantiations.mm" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Camera/ITMCalibIO.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Camera/ITMCalibIO.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Camera/ITMDisparityCalib.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Camera/ITMExtrinsics.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Camera/ITMIntrinsics.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Camera/ITMRGBDCalib.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Meshing/ITMMesh.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Misc/ITMIMUCalibrator.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Misc/ITMIMUMeasurement.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Misc/ITMPointCloud.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/RenderStates/ITMRenderState.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/RenderStates/ITMRenderStateFactory.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/RenderStates/ITMRenderStateMultiScene.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/RenderStates/ITMRenderState_VH.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/RenderStates/ITMSurfelRenderState.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/RenderStates/ITMSurfelRenderState.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMGlobalCache.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMLocalMap.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMLocalScene.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMLocalVBA.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMMultiSceneAccess.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMPlainVoxelArray.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMRepresentationAccess.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMScene.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMSurfelScene.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMSurfelTypes.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMVoxelBlockHash.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMVoxelTypes.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Tracking/ITMDepthHierarchyLevel.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Tracking/ITMImageHierarchy.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Tracking/ITMIntensityHierarchyLevel.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Tracking/ITMRGBHierarchyLevel.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Tracking/ITMSceneHierarchyLevel.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Tracking/ITMTemplatedHierarchyLevel.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Tracking/ITMTrackingState.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Tracking/ITMViewHierarchyLevel.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Tracking/TrackerIterationType.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Views/ITMView.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Views/ITMViewIMU.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/CPU/ITMColorTracker_CPU.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/CPU/ITMColorTracker_CPU.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/CPU/ITMDepthTracker_CPU.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/CPU/ITMDepthTracker_CPU.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/CPU/ITMExtendedTracker_CPU.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/CPU/ITMExtendedTracker_CPU.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/CUDA/ITMColorTracker_CUDA.cu" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/CUDA/ITMColorTracker_CUDA.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/CUDA/ITMDepthTracker_CUDA.cu" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/CUDA/ITMDepthTracker_CUDA.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/CUDA/ITMExtendedTracker_CUDA.cu" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/CUDA/ITMExtendedTracker_CUDA.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/ITMTrackerFactory.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Interface/ITMColorTracker.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Interface/ITMColorTracker.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Interface/ITMCompositeTracker.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Interface/ITMDepthTracker.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Interface/ITMDepthTracker.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Interface/ITMExtendedTracker.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Interface/ITMExtendedTracker.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Interface/ITMFileBasedTracker.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Interface/ITMFileBasedTracker.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Interface/ITMForceFailTracker.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Interface/ITMForceFailTracker.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Interface/ITMIMUTracker.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Interface/ITMIMUTracker.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Interface/ITMTracker.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Metal/ITMExtendedTracker.metal" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Metal/ITMExtendedTracker_Metal.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Metal/ITMExtendedTracker_Metal.mm" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Shared/ITMColorTracker_Shared.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Shared/ITMDepthTracker_Shared.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Shared/ITMExtendedTracker_Shared.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Utils/ITMCUDAUtils.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Utils/ITMImageTypes.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Utils/ITMLibSettings.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Utils/ITMLibSettings.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Utils/ITMMath.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Utils/ITMMemoryBlockTypes.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Utils/ITMPixelUtils.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Utils/ITMProjectionUtils.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Utils/ITMSceneParams.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Utils/ITMSurfelSceneParams.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/CMakeLists.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/GraphEdge.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/GraphEdge.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/GraphEdgeSE3.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/GraphEdgeSE3.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/GraphNode.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/GraphNodeSE3.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/LevenbergMarquardtMethod.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/LevenbergMarquardtMethod.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/MatrixWrapper.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/MatrixWrapper.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/Matrix_CSparse.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/ParameterIndex.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/PoseGraph.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/PoseGraph.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/QuaternionHelpers.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/QuaternionHelpers.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/SlamGraph.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/SlamGraph.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/SlamGraphErrorFunction.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/SlamGraphErrorFunction.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/SparseBlockMatrix.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/SparseRegularBlockMatrix.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/VariableLengthVector.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/Android.mk" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/Android.mk~c1c4fe627a2deacd274c8f1929dbbb44ae5e7e26" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/CMakeLists.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/CUDADefines.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/Cholesky.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/FileUtils.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/FileUtils.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/HomkerMap.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/Image.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/KeyValueConfig.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/KeyValueConfig.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/LexicalCast.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/MathUtils.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/Matrix.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/MemoryBlock.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/MemoryBlockPersister.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/MemoryDeviceType.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/MetalContext.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/MetalContext.mm" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/NVTimer.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/PlatformIndependence.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/SE3Pose.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/SE3Pose.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/SVMClassifier.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/Vector.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/package.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/CLIEngine.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/InfiniTAMCheck.cu" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/RosWrappedMain.cpp" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <ignored path="$PROJECT_DIR$/cmake-build-release/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileEditorManager">
+    <splitter split-orientation="vertical" split-proportion="0.4848485">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="InfiniTAMCheck.cu" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/InfiniTAMCheck.cu">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="197">
+                  <caret line="40" column="97" lean-forward="false" selection-start-line="39" selection-start-column="44" selection-end-line="40" selection-end-column="97" />
+                  <folding>
+                    <element signature="e#328#351#0" expanded="true" />
+                    <element signature="e#3431#3454#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ITMSceneReconstructionEngine_CPU.tpp" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/CPU/ITMSceneReconstructionEngine_CPU.tpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-7121">
+                  <caret line="30" column="32" lean-forward="false" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ITMMath.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/libs/ITMLib/Utils/ITMMath.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="405">
+                  <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Vector.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/libs/ORUtils/Vector.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="6075">
+                  <caret line="229" column="49" lean-forward="false" selection-start-line="229" selection-start-column="49" selection-end-line="229" selection-end-column="49" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ITMVoxelTypes.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMVoxelTypes.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="140">
+                  <caret line="19" column="61" lean-forward="false" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="61" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ITMMultiSceneAccess.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMMultiSceneAccess.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="907">
+                  <caret line="92" column="16" lean-forward="false" selection-start-line="92" selection-start-column="16" selection-end-line="92" selection-end-column="16" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ITMBasicEngine.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/libs/ITMLib/Core/ITMBasicEngine.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="319">
+                  <caret line="70" column="26" lean-forward="false" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="CLIEngine.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/CLIEngine.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="756">
+                  <caret line="35" column="35" lean-forward="false" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="InfiniTAMCheck.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/include/InfiniTAMCheck.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="216">
+                  <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ITMLocalMap.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMLocalMap.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="405">
+                  <caret line="21" column="36" lean-forward="false" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="CLIEngine.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/include/CLIEngine.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1026">
+                  <caret line="38" column="32" lean-forward="false" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+                  <folding>
+                    <element signature="e#104#136#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ITMLibSettings.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/libs/ITMLib/Utils/ITMLibSettings.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="189">
+                  <caret line="75" column="28" lean-forward="true" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="28" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ITMLibSettings.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/libs/ITMLib/Utils/ITMLibSettings.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="109">
+                  <caret line="60" column="18" lean-forward="false" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ITMSceneParams.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/libs/ITMLib/Utils/ITMSceneParams.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="136">
+                  <caret line="28" column="51" lean-forward="false" selection-start-line="27" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ITMSceneReconstructionEngine_Shared.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/Shared/ITMSceneReconstructionEngine_Shared.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="5076">
+                  <caret line="188" column="45" lean-forward="false" selection-start-line="188" selection-start-column="45" selection-end-line="188" selection-end-column="45" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="RosWrappedMain.cpp" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/RosWrappedMain.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="179">
+                  <caret line="40" column="37" lean-forward="false" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="37" />
+                  <folding>
+                    <element signature="e#90#108#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>voxelIndex</find>
+      <find>hashIndex</find>
+      <find>hashTable[hashIdx]</find>
+      <find>hashEntries</find>
+      <find>SDF_LOCAL_BLOCK_NUM</find>
+      <find>i</find>
+      <find>localVBA</find>
+      <find>hashEntry</find>
+      <find>hashTable</find>
+      <find>getNumAllocatedVoxelBlocks</find>
+      <find>ITMSceneReconstructionEngine_CUDA</find>
+      <find>cuda_runti</find>
+      <find>mainEngine</find>
+      <find>pp</find>
+      <find>pp(</find>
+      <find>HashTable</find>
+      <find>hashtable</find>
+      <find>SDF_BUCKET_NUM +</find>
+      <find>noTotalEntries</find>
+      <find>buildHashAllocAndVisibleType_device</find>
+      <find>hashEntry = hashTable[hashIdx];</find>
+      <find>posInBlock</find>
+      <find>toShortFloor</find>
+      <find>InfiniTAMCheck</find>
+      <find>valueToFloat</find>
+      <find>sdf</find>
+      <find>mu</find>
+      <find>setting</find>
+      <find>block_size *</find>
+      <find>save</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/libs/ITMLib/Utils/ITMMath.h" />
+        <option value="$PROJECT_DIR$/include/ImageSourceEngine.h" />
+        <option value="$PROJECT_DIR$/libs/ITMLib/Engines/Meshing/Interface/ITMMultiMeshingEngine.h" />
+        <option value="$PROJECT_DIR$/libs/ITMLib/CUDAInstantiations.cu" />
+        <option value="$PROJECT_DIR$/libs/ITMLib/CPUInstantiations.cpp" />
+        <option value="$PROJECT_DIR$/libs/ITMLib/Trackers/Interface/ITMFileBasedTracker.cpp" />
+        <option value="$PROJECT_DIR$/libs/ITMLib/Trackers/Interface/ITMExternalTracker.h" />
+        <option value="$PROJECT_DIR$/libs/ITMLib/Trackers/Interface/ITMExternalTracker.cpp" />
+        <option value="$PROJECT_DIR$/libs/ITMLib/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/libs/ITMLib/Trackers/CUDA/ITMExternalTracker_CUDA.h" />
+        <option value="$PROJECT_DIR$/libs/ITMLib/Trackers/CPU/ITMExternalTracker_CPU.h" />
+        <option value="$PROJECT_DIR$/cmake/Flags.cmake" />
+        <option value="$PROJECT_DIR$/libs/ITMLib/Utils/ITMCUDAUtils.h" />
+        <option value="$PROJECT_DIR$/libs/ITMLib/Trackers/CUDA/ITMExternalTracker_CUDA.cu" />
+        <option value="$PROJECT_DIR$/libs/ITMLib/Trackers/CPU/ITMExternalTracker_CPU.cpp" />
+        <option value="$PROJECT_DIR$/libs/ITMLib/Trackers/ITMTrackerFactory.h" />
+        <option value="$PROJECT_DIR$/src/ImageSourceEngine.cpp" />
+        <option value="$PROJECT_DIR$/libs/ITMLib/Objects/Camera/ITMRGBDCalib.h" />
+        <option value="$PROJECT_DIR$/libs/ORUtils/SE3Pose.cpp" />
+        <option value="$PROJECT_DIR$/libs/ITMLib/Core/ITMMainEngine.h" />
+        <option value="$PROJECT_DIR$/libs/ITMLib/Core/ITMBasicEngine.h" />
+        <option value="$PROJECT_DIR$/libs/ITMLib/Core/ITMBasicEngine.tpp" />
+        <option value="$PROJECT_DIR$/libs/ITMLib/Objects/Camera/ITMDisparityCalib.h" />
+        <option value="$PROJECT_DIR$/libs/ORUtils/FileUtils.cpp" />
+        <option value="$PROJECT_DIR$/src/CLIEngine.cpp" />
+        <option value="$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMVoxelBlockHash.h" />
+        <option value="$PROJECT_DIR$/src/InfiniTAMCheck.cpp" />
+        <option value="$PROJECT_DIR$/include/CLIEngine.h" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/CUDA/ITMSceneReconstructionEngine_CUDA.tcu" />
+        <option value="$PROJECT_DIR$/src/InfiniTAM_cli.cpp" />
+        <option value="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/Shared/ITMSceneReconstructionEngine_Shared.h" />
+        <option value="$PROJECT_DIR$/include/InfiniTAMCheck.h" />
+        <option value="$PROJECT_DIR$/src/RosWrappedMain.cpp" />
+        <option value="$PROJECT_DIR$/src/InfiniTAMCheck.cu" />
+        <option value="$PROJECT_DIR$/libs/ITMLib/Utils/ITMLibSettings.cpp" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1599" />
+    <option name="y" value="-11" />
+    <option name="width" value="1082" />
+    <option name="height" value="1932" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource ProjectPane="true" />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="infinitam" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="infinitam" type="47feb1d3:ProjectViewModuleNode" />
+            </path>
+            <path>
+              <item name="infinitam" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="infinitam" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="infinitam" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="infinitam" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="infinitam" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="infinitam" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="infinitam" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="infinitam" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="infinitam" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/tommy/catkin_ws/src/infinitam/libs/ITMLib/Objects/Scene/ITMVoxelBlockHash.h" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/libs" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Build All">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="infinitam" RUN_TARGET_NAME="infinitam" EXPLICIT_BUILD_TARGET_NAME="all">
+      <envs />
+    </configuration>
+    <configuration name="FernRelocLib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="FernRelocLib" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="ITMLib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="ITMLib" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="infinitam" RUN_TARGET_NAME="infinitam">
+      <envs />
+    </configuration>
+    <configuration name="MiniSlamGraphLib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="MiniSlamGraphLib" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="ORUtils" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="ORUtils" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="infinitam" RUN_TARGET_NAME="infinitam">
+      <envs />
+    </configuration>
+    <configuration name="actionlib_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="actionlib_generate_messages_cpp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="infinitam" RUN_TARGET_NAME="infinitam">
+      <envs />
+    </configuration>
+    <configuration name="actionlib_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="actionlib_generate_messages_eus" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="infinitam" RUN_TARGET_NAME="infinitam">
+      <envs />
+    </configuration>
+    <configuration name="actionlib_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="actionlib_generate_messages_lisp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="infinitam" RUN_TARGET_NAME="infinitam">
+      <envs />
+    </configuration>
+    <configuration name="actionlib_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="actionlib_generate_messages_nodejs" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="infinitam" RUN_TARGET_NAME="infinitam">
+      <envs />
+    </configuration>
+    <configuration name="actionlib_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="actionlib_generate_messages_py" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="infinitam" RUN_TARGET_NAME="infinitam">
+      <envs />
+    </configuration>
+    <configuration name="actionlib_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="actionlib_msgs_generate_messages_cpp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="infinitam" RUN_TARGET_NAME="infinitam">
+      <envs />
+    </configuration>
+    <configuration name="actionlib_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="actionlib_msgs_generate_messages_eus" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="infinitam" RUN_TARGET_NAME="infinitam">
+      <envs />
+    </configuration>
+    <configuration name="actionlib_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="actionlib_msgs_generate_messages_lisp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="infinitam" RUN_TARGET_NAME="infinitam">
+      <envs />
+    </configuration>
+    <configuration name="actionlib_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="actionlib_msgs_generate_messages_nodejs" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="infinitam" RUN_TARGET_NAME="infinitam">
+      <envs />
+    </configuration>
+    <configuration name="actionlib_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="actionlib_msgs_generate_messages_py" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="infinitam" RUN_TARGET_NAME="infinitam">
+      <envs />
+    </configuration>
+    <configuration name="clean_test_results" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="clean_test_results" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="infinitam" RUN_TARGET_NAME="infinitam">
+      <envs />
+    </configuration>
+    <configuration name="download_extra_data" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="download_extra_data" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="infinitam" RUN_TARGET_NAME="infinitam">
+      <envs />
+    </configuration>
+    <configuration name="doxygen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="doxygen" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="infinitam" RUN_TARGET_NAME="infinitam">
+      <envs />
+    </configuration>
+    <configuration name="geometry_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="geometry_msgs_generate_messages_cpp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="infinitam" RUN_TARGET_NAME="infinitam">
+      <envs />
+    </configuration>
+    <configuration name="geometry_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="geometry_msgs_generate_messages_eus" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="infinitam" RUN_TARGET_NAME="infinitam">
+      <envs />
+    </configuration>
+    <configuration name="geometry_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="geometry_msgs_generate_messages_lisp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="infinitam" RUN_TARGET_NAME="infinitam">
+      <envs />
+    </configuration>
+    <configuration name="geometry_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="geometry_msgs_generate_messages_nodejs" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="infinitam" RUN_TARGET_NAME="infinitam">
+      <envs />
+    </configuration>
+    <configuration name="geometry_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="geometry_msgs_generate_messages_py" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="infinitam" RUN_TARGET_NAME="infinitam">
+      <envs />
+    </configuration>
+    <configuration name="gmock" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="gmock" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="gmock_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="gmock_main" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="gtest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="gtest" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="gtest_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="gtest_main" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="infinitam" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="infinitam" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="infinitam" RUN_TARGET_NAME="infinitam">
+      <envs />
+    </configuration>
+    <configuration name="nav_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="nav_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="nav_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="nav_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="nav_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="nav_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="nav_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="nav_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="nav_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="nav_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="roscpp_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="roscpp_generate_messages_cpp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="roscpp_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="roscpp_generate_messages_eus" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="roscpp_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="roscpp_generate_messages_lisp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="roscpp_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="roscpp_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="roscpp_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="roscpp_generate_messages_py" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="rosgraph_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="rosgraph_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="rosgraph_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="rosgraph_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="rosgraph_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="rosgraph_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="rosgraph_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="rosgraph_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="rosgraph_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="rosgraph_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="run_tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="run_tests" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="sensor_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="sensor_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="sensor_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="sensor_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="sensor_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="sensor_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="sensor_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="sensor_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="sensor_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="sensor_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="std_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="std_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="std_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="std_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="std_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="std_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="std_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="std_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="std_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="std_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="tests" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="tf2_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="tf2_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="tf2_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="tf2_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="tf2_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="tf2_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="tf2_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="tf2_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="tf2_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="tf2_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="tf_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="tf_generate_messages_cpp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="tf_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="tf_generate_messages_eus" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="tf_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="tf_generate_messages_lisp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="tf_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="tf_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="tf_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="tf_generate_messages_py" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="visualization_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="visualization_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="visualization_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="visualization_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="visualization_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="visualization_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="visualization_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="visualization_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="visualization_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="infinitam" TARGET_NAME="visualization_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <list size="70">
+      <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
+      <item index="1" class="java.lang.String" itemvalue="Application.actionlib_generate_messages_cpp" />
+      <item index="2" class="java.lang.String" itemvalue="Application.actionlib_generate_messages_eus" />
+      <item index="3" class="java.lang.String" itemvalue="Application.actionlib_generate_messages_lisp" />
+      <item index="4" class="java.lang.String" itemvalue="Application.actionlib_generate_messages_nodejs" />
+      <item index="5" class="java.lang.String" itemvalue="Application.actionlib_generate_messages_py" />
+      <item index="6" class="java.lang.String" itemvalue="Application.actionlib_msgs_generate_messages_cpp" />
+      <item index="7" class="java.lang.String" itemvalue="Application.actionlib_msgs_generate_messages_eus" />
+      <item index="8" class="java.lang.String" itemvalue="Application.actionlib_msgs_generate_messages_lisp" />
+      <item index="9" class="java.lang.String" itemvalue="Application.actionlib_msgs_generate_messages_nodejs" />
+      <item index="10" class="java.lang.String" itemvalue="Application.actionlib_msgs_generate_messages_py" />
+      <item index="11" class="java.lang.String" itemvalue="Application.clean_test_results" />
+      <item index="12" class="java.lang.String" itemvalue="Application.download_extra_data" />
+      <item index="13" class="java.lang.String" itemvalue="Application.doxygen" />
+      <item index="14" class="java.lang.String" itemvalue="Application.geometry_msgs_generate_messages_cpp" />
+      <item index="15" class="java.lang.String" itemvalue="Application.geometry_msgs_generate_messages_eus" />
+      <item index="16" class="java.lang.String" itemvalue="Application.geometry_msgs_generate_messages_lisp" />
+      <item index="17" class="java.lang.String" itemvalue="Application.geometry_msgs_generate_messages_nodejs" />
+      <item index="18" class="java.lang.String" itemvalue="Application.geometry_msgs_generate_messages_py" />
+      <item index="19" class="java.lang.String" itemvalue="Application.infinitam" />
+      <item index="20" class="java.lang.String" itemvalue="Application.nav_msgs_generate_messages_cpp" />
+      <item index="21" class="java.lang.String" itemvalue="Application.nav_msgs_generate_messages_eus" />
+      <item index="22" class="java.lang.String" itemvalue="Application.nav_msgs_generate_messages_lisp" />
+      <item index="23" class="java.lang.String" itemvalue="Application.nav_msgs_generate_messages_nodejs" />
+      <item index="24" class="java.lang.String" itemvalue="Application.nav_msgs_generate_messages_py" />
+      <item index="25" class="java.lang.String" itemvalue="Application.roscpp_generate_messages_cpp" />
+      <item index="26" class="java.lang.String" itemvalue="Application.roscpp_generate_messages_eus" />
+      <item index="27" class="java.lang.String" itemvalue="Application.roscpp_generate_messages_lisp" />
+      <item index="28" class="java.lang.String" itemvalue="Application.roscpp_generate_messages_nodejs" />
+      <item index="29" class="java.lang.String" itemvalue="Application.roscpp_generate_messages_py" />
+      <item index="30" class="java.lang.String" itemvalue="Application.rosgraph_msgs_generate_messages_cpp" />
+      <item index="31" class="java.lang.String" itemvalue="Application.rosgraph_msgs_generate_messages_eus" />
+      <item index="32" class="java.lang.String" itemvalue="Application.rosgraph_msgs_generate_messages_lisp" />
+      <item index="33" class="java.lang.String" itemvalue="Application.rosgraph_msgs_generate_messages_nodejs" />
+      <item index="34" class="java.lang.String" itemvalue="Application.rosgraph_msgs_generate_messages_py" />
+      <item index="35" class="java.lang.String" itemvalue="Application.run_tests" />
+      <item index="36" class="java.lang.String" itemvalue="Application.sensor_msgs_generate_messages_cpp" />
+      <item index="37" class="java.lang.String" itemvalue="Application.sensor_msgs_generate_messages_eus" />
+      <item index="38" class="java.lang.String" itemvalue="Application.sensor_msgs_generate_messages_lisp" />
+      <item index="39" class="java.lang.String" itemvalue="Application.sensor_msgs_generate_messages_nodejs" />
+      <item index="40" class="java.lang.String" itemvalue="Application.sensor_msgs_generate_messages_py" />
+      <item index="41" class="java.lang.String" itemvalue="Application.std_msgs_generate_messages_cpp" />
+      <item index="42" class="java.lang.String" itemvalue="Application.std_msgs_generate_messages_eus" />
+      <item index="43" class="java.lang.String" itemvalue="Application.std_msgs_generate_messages_lisp" />
+      <item index="44" class="java.lang.String" itemvalue="Application.std_msgs_generate_messages_nodejs" />
+      <item index="45" class="java.lang.String" itemvalue="Application.std_msgs_generate_messages_py" />
+      <item index="46" class="java.lang.String" itemvalue="Application.tests" />
+      <item index="47" class="java.lang.String" itemvalue="Application.tf2_msgs_generate_messages_cpp" />
+      <item index="48" class="java.lang.String" itemvalue="Application.tf2_msgs_generate_messages_eus" />
+      <item index="49" class="java.lang.String" itemvalue="Application.tf2_msgs_generate_messages_lisp" />
+      <item index="50" class="java.lang.String" itemvalue="Application.tf2_msgs_generate_messages_nodejs" />
+      <item index="51" class="java.lang.String" itemvalue="Application.tf2_msgs_generate_messages_py" />
+      <item index="52" class="java.lang.String" itemvalue="Application.tf_generate_messages_cpp" />
+      <item index="53" class="java.lang.String" itemvalue="Application.tf_generate_messages_eus" />
+      <item index="54" class="java.lang.String" itemvalue="Application.tf_generate_messages_lisp" />
+      <item index="55" class="java.lang.String" itemvalue="Application.tf_generate_messages_nodejs" />
+      <item index="56" class="java.lang.String" itemvalue="Application.tf_generate_messages_py" />
+      <item index="57" class="java.lang.String" itemvalue="Application.visualization_msgs_generate_messages_cpp" />
+      <item index="58" class="java.lang.String" itemvalue="Application.visualization_msgs_generate_messages_eus" />
+      <item index="59" class="java.lang.String" itemvalue="Application.visualization_msgs_generate_messages_lisp" />
+      <item index="60" class="java.lang.String" itemvalue="Application.visualization_msgs_generate_messages_nodejs" />
+      <item index="61" class="java.lang.String" itemvalue="Application.visualization_msgs_generate_messages_py" />
+      <item index="62" class="java.lang.String" itemvalue="Application.FernRelocLib" />
+      <item index="63" class="java.lang.String" itemvalue="Application.ITMLib" />
+      <item index="64" class="java.lang.String" itemvalue="Application.MiniSlamGraphLib" />
+      <item index="65" class="java.lang.String" itemvalue="Application.ORUtils" />
+      <item index="66" class="java.lang.String" itemvalue="Application.gmock" />
+      <item index="67" class="java.lang.String" itemvalue="Application.gmock_main" />
+      <item index="68" class="java.lang.String" itemvalue="Application.gtest" />
+      <item index="69" class="java.lang.String" itemvalue="Application.gtest_main" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="281fa047-0e4e-4a61-965a-829289d67933" name="Default" comment="" />
+      <created>1548216526311</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1548216526311</updated>
+      <workItem from="1548216527401" duration="4064000" />
+      <workItem from="1548220633297" duration="3550000" />
+      <workItem from="1548224232227" duration="85781000" />
+      <workItem from="1548950261963" duration="80000" />
+      <workItem from="1548950354002" duration="14376000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="107851000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1599" y="-11" width="1082" height="1932" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24976349" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2003367" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12962963" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33033708" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28507295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/CUDA/ITMSceneReconstructionEngine_CUDA.tcu</url>
+          <line>187</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="8" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="breakpointLogExpression">
+      <expression>
+        <expression-string>(posInBlock[2] + k) * SDF_BLOCK_SIZE * SDF_BLOCK_SIZE]));</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/libs/ITMLib/Objects/Camera/ITMRGBDCalib.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="837">
+          <caret line="33" column="25" lean-forward="false" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/ITMLib/Objects/Camera/ITMDisparityCalib.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="891">
+          <caret line="45" column="9" lean-forward="false" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/ITMLib/Objects/Camera/ITMCalibIO.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1701">
+          <caret line="67" column="20" lean-forward="false" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/ImageSourceEngine.h" />
+    <entry file="file://$PROJECT_DIR$/libs/ORUtils/FileUtils.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="25" column="76" lean-forward="false" selection-start-line="25" selection-start-column="76" selection-end-line="25" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/ros/kinetic/include/cv_bridge/cv_bridge.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="80" column="10" lean-forward="false" selection-start-line="80" selection-start-column="10" selection-end-line="80" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ImageSourceEngine.cpp" />
+    <entry file="file:///usr/include/c++/5/bits/basic_string.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="453" column="6" lean-forward="false" selection-start-line="453" selection-start-column="6" selection-end-line="453" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/core/hal/interface.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="87" column="8" lean-forward="false" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/eigen3/Eigen/src/Geometry/Quaternion.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="126" column="28" lean-forward="false" selection-start-line="126" selection-start-column="28" selection-end-line="126" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/ORUtils/Matrix.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="58" column="10" lean-forward="false" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/ORUtils/NVTimer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="681">
+          <caret line="349" column="32" lean-forward="false" selection-start-line="349" selection-start-column="32" selection-end-line="349" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/eigen3/Eigen/src/Core/Matrix.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="258" column="24" lean-forward="false" selection-start-line="258" selection-start-column="24" selection-end-line="258" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/ITMLib/Objects/RenderStates/ITMRenderState_VH.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="24" column="35" lean-forward="false" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check.h" />
+    <entry file="file://$PROJECT_DIR$/check.cpp" />
+    <entry file="file://$PROJECT_DIR$/cmake/SetCUDALibTarget.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/ITMLib/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/ros/kinetic/include/sensor_msgs/image_encodings.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="179" column="0" lean-forward="false" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/Interface/ITMSceneReconstructionEngine.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/ITMLib/Utils/ITMCUDAUtils.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3125">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/ITMLib/Core/ITMMainEngine.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="46" column="10" lean-forward="false" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/CUDA/ITMSceneReconstructionEngine_CUDA.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/ITMLib/Core/ITMDenseMapper.tpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/ITMLib/Core/ITMBasicEngine.tpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="306" column="0" lean-forward="false" selection-start-line="306" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/boost/function/function_template.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-79">
+          <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/cuda-9.1/include/cuda_runtime_api.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="888" column="38" lean-forward="false" selection-start-line="888" selection-start-column="38" selection-end-line="888" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMLocalVBA.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="24" />
+          <folding>
+            <element signature="e#104#145#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/ORUtils/CUDADefines.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMRepresentationAccess.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="51" lean-forward="false" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
+          <folding>
+            <element signature="e#144#156#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/Shared/ITMSceneReconstructionEngine_Shared.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5076">
+          <caret line="188" column="45" lean-forward="false" selection-start-line="188" selection-start-column="45" selection-end-line="188" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/CUDA/ITMSceneReconstructionEngine_CUDA.tcu">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="136" column="43" lean-forward="false" selection-start-line="136" selection-start-column="43" selection-end-line="136" selection-end-column="43" />
+          <folding>
+            <element signature="e#90#136#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="43" column="9" lean-forward="false" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/ITMLib/ITMLibDefines.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMVoxelBlockHash.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMScene.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMLocalMap.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="21" column="36" lean-forward="false" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/InfiniTAMCheck.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CLIEngine.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="35" column="35" lean-forward="false" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/ITMLib/Core/ITMBasicEngine.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="70" column="26" lean-forward="false" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMVoxelTypes.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="19" column="61" lean-forward="false" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMMultiSceneAccess.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="907">
+          <caret line="92" column="16" lean-forward="false" selection-start-line="92" selection-start-column="16" selection-end-line="92" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/ITMLib/Utils/ITMSceneParams.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="28" column="51" lean-forward="false" selection-start-line="27" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/ORUtils/Vector.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6075">
+          <caret line="229" column="49" lean-forward="false" selection-start-line="229" selection-start-column="49" selection-end-line="229" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/CLIEngine.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="38" column="32" lean-forward="false" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+          <folding>
+            <element signature="e#104#136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/ITMLib/Utils/ITMMath.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InfiniTAMCheck.cu">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="40" column="97" lean-forward="false" selection-start-line="39" selection-start-column="44" selection-end-line="40" selection-end-column="97" />
+          <folding>
+            <element signature="e#328#351#0" expanded="true" />
+            <element signature="e#3431#3454#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/CPU/ITMSceneReconstructionEngine_CPU.tpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7121">
+          <caret line="30" column="32" lean-forward="false" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/ITMLib/Utils/ITMLibSettings.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="60" column="18" lean-forward="false" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/ITMLib/Utils/ITMLibSettings.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="75" column="28" lean-forward="true" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RosWrappedMain.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="40" column="37" lean-forward="false" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="37" />
+          <folding>
+            <element signature="e#90#108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
