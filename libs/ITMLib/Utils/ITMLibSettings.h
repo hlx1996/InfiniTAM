@@ -61,7 +61,8 @@ namespace ITMLib
 		ITMSceneParams sceneParams;
 		ITMSurfelSceneParams surfelSceneParams;
 
-		ITMLibSettings(void);
+		ITMLibSettings(float mu = 0.5f, int maxW = 100, float voxelSize = 0.1f,
+					   float viewFrustum_min = 0.01f, float viewFrustum_max = 5.0f, bool stopIntegratingAtMaxW = false);
 		virtual ~ITMLibSettings(void) {}
 
 		// Suppress the default copy constructor and assignment operator

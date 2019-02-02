@@ -81,307 +81,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="281fa047-0e4e-4a61-965a-829289d67933" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/infinitam.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/CUDACheckCompute.cmake" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/FindCSparse.cmake" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/FindFFmpeg.cmake" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/FindLibRoyale.cmake" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/FindOpenNI.cmake" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/FindRealSense.cmake" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/FindRealSense2.cmake" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/Flags.cmake" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/LinkFFmpeg.cmake" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/LinkGLUT.cmake" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/LinkLibRoyale.cmake" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/LinkOpenGL.cmake" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/LinkOpenNI.cmake" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/LinkPNG.cmake" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/LinkRealSense.cmake" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/LinkRealSense2.cmake" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/LinkUVC.cmake" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/OfferC++11Support.cmake" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/OfferInputMirroring.cmake" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/SetCUDAAppTarget.cmake" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/SetCUDALibTarget.cmake" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/SetLibTarget.cmake" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/UseCUDA.cmake" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/UseFFmpeg.cmake" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/UseGLUT.cmake" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/UseKinect2.cmake" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/UseLibRoyale.cmake" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/UseOpenGL.cmake" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/UseOpenMP.cmake" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/UseOpenNI.cmake" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/UsePNG.cmake" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/UseRealSense.cmake" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/UseRealSense2.cmake" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/UseUVC.cmake" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake/cuda_compute_capability.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/CLIEngine.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/InfiniTAMCheck.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/FernRelocLib/CMakeLists.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/FernRelocLib/FernConservatory.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/FernRelocLib/FernConservatory.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/FernRelocLib/PixelUtils.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/FernRelocLib/PoseDatabase.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/FernRelocLib/PoseDatabase.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/FernRelocLib/RelocDatabase.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/FernRelocLib/RelocDatabase.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/FernRelocLib/Relocaliser.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/FernRelocLib/Relocaliser.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Android.mk" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/CMakeLists.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/CPUInstantiations.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/CUDAInstantiations.cu" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Core/ITMBasicEngine.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Core/ITMBasicEngine.tpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Core/ITMBasicSurfelEngine.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Core/ITMBasicSurfelEngine.tpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Core/ITMDenseMapper.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Core/ITMDenseMapper.tpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Core/ITMDenseSurfelMapper.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Core/ITMDenseSurfelMapper.tpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Core/ITMMainEngine.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Core/ITMMultiEngine.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Core/ITMMultiEngine.tpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Core/ITMTrackingController.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/LowLevel/CPU/ITMLowLevelEngine_CPU.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/LowLevel/CPU/ITMLowLevelEngine_CPU.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/LowLevel/CUDA/ITMLowLevelEngine_CUDA.cu" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/LowLevel/CUDA/ITMLowLevelEngine_CUDA.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/LowLevel/ITMLowLevelEngineFactory.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/LowLevel/ITMLowLevelEngineFactory.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/LowLevel/Interface/ITMLowLevelEngine.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/LowLevel/Shared/ITMLowLevelEngine_Shared.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Meshing/CPU/ITMMeshingEngine_CPU.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Meshing/CPU/ITMMeshingEngine_CPU.tpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Meshing/CPU/ITMMultiMeshingEngine_CPU.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Meshing/CPU/ITMMultiMeshingEngine_CPU.tpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Meshing/CUDA/ITMMeshingEngine_CUDA.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Meshing/CUDA/ITMMeshingEngine_CUDA.tcu" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Meshing/CUDA/ITMMultiMeshingEngine_CUDA.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Meshing/CUDA/ITMMultiMeshingEngine_CUDA.tcu" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Meshing/ITMMeshingEngineFactory.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Meshing/ITMMultiMeshingEngineFactory.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Meshing/Interface/ITMMeshingEngine.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Meshing/Interface/ITMMultiMeshingEngine.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Meshing/Shared/ITMMeshingEngine_Shared.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Meshing/Shared/ITMMultiMeshingEngine_Shared.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/MultiScene/ITMActiveMapManager.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/MultiScene/ITMActiveMapManager.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/MultiScene/ITMGlobalAdjustmentEngine.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/MultiScene/ITMGlobalAdjustmentEngine.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/MultiScene/ITMMapGraphManager.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/MultiScene/ITMMapGraphManager.tpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/CPU/ITMSceneReconstructionEngine_CPU.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/CPU/ITMSceneReconstructionEngine_CPU.tpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/CPU/ITMSurfelSceneReconstructionEngine_CPU.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/CPU/ITMSurfelSceneReconstructionEngine_CPU.tpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/CUDA/ITMSceneReconstructionEngine_CUDA.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/CUDA/ITMSceneReconstructionEngine_CUDA.tcu" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/CUDA/ITMSurfelSceneReconstructionEngine_CUDA.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/CUDA/ITMSurfelSceneReconstructionEngine_CUDA.tcu" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/ITMSceneReconstructionEngineFactory.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/ITMSurfelSceneReconstructionEngineFactory.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/ITMSurfelSceneReconstructionEngineFactory.tpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/Interface/ITMSceneReconstructionEngine.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/Interface/ITMSurfelSceneReconstructionEngine.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/Interface/ITMSurfelSceneReconstructionEngine.tpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/Metal/ITMSceneReconstructionEngine.metal" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/Metal/ITMSceneReconstructionEngine_Metal.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/Metal/ITMSceneReconstructionEngine_Metal.mm" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/Shared/ITMSceneReconstructionEngine_Shared.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/Shared/ITMSurfelSceneReconstructionEngine_Shared.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Swapping/CPU/ITMSwappingEngine_CPU.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Swapping/CPU/ITMSwappingEngine_CPU.tpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Swapping/CUDA/ITMSwappingEngine_CUDA.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Swapping/CUDA/ITMSwappingEngine_CUDA.tcu" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Swapping/ITMSwappingEngineFactory.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Swapping/Interface/ITMSwappingEngine.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Swapping/Metal/ITMSwappingEngine.metal" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Swapping/Metal/ITMSwappingEngine_Metal.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Swapping/Metal/ITMSwappingEngine_Metal.mm" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Swapping/Shared/ITMSwappingEngine_Shared.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/ViewBuilding/CPU/ITMViewBuilder_CPU.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/ViewBuilding/CPU/ITMViewBuilder_CPU.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/ViewBuilding/CUDA/ITMViewBuilder_CUDA.cu" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/ViewBuilding/CUDA/ITMViewBuilder_CUDA.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/ViewBuilding/ITMViewBuilderFactory.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/ViewBuilding/ITMViewBuilderFactory.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/ViewBuilding/Interface/ITMViewBuilder.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/ViewBuilding/Shared/ITMViewBuilder_Shared.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/CPU/ITMMultiVisualisationEngine_CPU.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/CPU/ITMMultiVisualisationEngine_CPU.tpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/CPU/ITMSurfelVisualisationEngine_CPU.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/CPU/ITMSurfelVisualisationEngine_CPU.tpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/CPU/ITMVisualisationEngine_CPU.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/CPU/ITMVisualisationEngine_CPU.tpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/CUDA/ITMMultiVisualisationEngine_CUDA.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/CUDA/ITMMultiVisualisationEngine_CUDA.tcu" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/CUDA/ITMSurfelVisualisationEngine_CUDA.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/CUDA/ITMSurfelVisualisationEngine_CUDA.tcu" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/CUDA/ITMVisualisationEngine_CUDA.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/CUDA/ITMVisualisationEngine_CUDA.tcu" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/CUDA/ITMVisualisationHelpers_CUDA.cu" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/CUDA/ITMVisualisationHelpers_CUDA.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/ITMMultiVisualisationEngineFactory.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/ITMSurfelVisualisationEngineFactory.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/ITMSurfelVisualisationEngineFactory.tpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/ITMVisualisationEngineFactory.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/Interface/ITMMultiVisualisationEngine.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/Interface/ITMSurfelVisualisationEngine.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/Interface/ITMSurfelVisualisationEngine.tpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/Interface/ITMVisualisationEngine.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/Interface/ITMVisualisationEngine.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/Metal/ITMVisualisationEngine.metal" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/Metal/ITMVisualisationEngine_Metal.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/Metal/ITMVisualisationEngine_Metal.mm" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/Shared/ITMSurfelVisualisationEngine_Settings.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/Shared/ITMSurfelVisualisationEngine_Shared.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Engines/Visualisation/Shared/ITMVisualisationEngine_Shared.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/ITMLibDefines.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/MetalInstantiations.mm" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Camera/ITMCalibIO.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Camera/ITMCalibIO.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Camera/ITMDisparityCalib.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Camera/ITMExtrinsics.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Camera/ITMIntrinsics.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Camera/ITMRGBDCalib.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Meshing/ITMMesh.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Misc/ITMIMUCalibrator.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Misc/ITMIMUMeasurement.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Misc/ITMPointCloud.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/RenderStates/ITMRenderState.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/RenderStates/ITMRenderStateFactory.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/RenderStates/ITMRenderStateMultiScene.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/RenderStates/ITMRenderState_VH.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/RenderStates/ITMSurfelRenderState.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/RenderStates/ITMSurfelRenderState.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMGlobalCache.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMLocalMap.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMLocalScene.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMLocalVBA.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMMultiSceneAccess.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMPlainVoxelArray.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMRepresentationAccess.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMScene.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMSurfelScene.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMSurfelTypes.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMVoxelBlockHash.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMVoxelTypes.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Tracking/ITMDepthHierarchyLevel.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Tracking/ITMImageHierarchy.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Tracking/ITMIntensityHierarchyLevel.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Tracking/ITMRGBHierarchyLevel.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Tracking/ITMSceneHierarchyLevel.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Tracking/ITMTemplatedHierarchyLevel.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Tracking/ITMTrackingState.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Tracking/ITMViewHierarchyLevel.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Tracking/TrackerIterationType.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Views/ITMView.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Objects/Views/ITMViewIMU.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/CPU/ITMColorTracker_CPU.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/CPU/ITMColorTracker_CPU.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/CPU/ITMDepthTracker_CPU.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/CPU/ITMDepthTracker_CPU.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/CPU/ITMExtendedTracker_CPU.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/CPU/ITMExtendedTracker_CPU.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/CUDA/ITMColorTracker_CUDA.cu" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/CUDA/ITMColorTracker_CUDA.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/CUDA/ITMDepthTracker_CUDA.cu" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/CUDA/ITMDepthTracker_CUDA.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/CUDA/ITMExtendedTracker_CUDA.cu" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/CUDA/ITMExtendedTracker_CUDA.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/ITMTrackerFactory.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Interface/ITMColorTracker.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Interface/ITMColorTracker.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Interface/ITMCompositeTracker.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Interface/ITMDepthTracker.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Interface/ITMDepthTracker.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Interface/ITMExtendedTracker.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Interface/ITMExtendedTracker.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Interface/ITMFileBasedTracker.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Interface/ITMFileBasedTracker.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Interface/ITMForceFailTracker.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Interface/ITMForceFailTracker.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Interface/ITMIMUTracker.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Interface/ITMIMUTracker.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Interface/ITMTracker.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Metal/ITMExtendedTracker.metal" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Metal/ITMExtendedTracker_Metal.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Metal/ITMExtendedTracker_Metal.mm" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Shared/ITMColorTracker_Shared.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Shared/ITMDepthTracker_Shared.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Trackers/Shared/ITMExtendedTracker_Shared.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Utils/ITMCUDAUtils.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Utils/ITMImageTypes.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Utils/ITMLibSettings.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Utils/ITMLibSettings.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Utils/ITMMath.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Utils/ITMMemoryBlockTypes.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Utils/ITMPixelUtils.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Utils/ITMProjectionUtils.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Utils/ITMSceneParams.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ITMLib/Utils/ITMSurfelSceneParams.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/CMakeLists.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/GraphEdge.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/GraphEdge.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/GraphEdgeSE3.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/GraphEdgeSE3.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/GraphNode.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/GraphNodeSE3.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/LevenbergMarquardtMethod.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/LevenbergMarquardtMethod.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/MatrixWrapper.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/MatrixWrapper.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/Matrix_CSparse.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/ParameterIndex.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/PoseGraph.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/PoseGraph.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/QuaternionHelpers.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/QuaternionHelpers.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/SlamGraph.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/SlamGraph.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/SlamGraphErrorFunction.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/SlamGraphErrorFunction.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/SparseBlockMatrix.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/SparseRegularBlockMatrix.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/MiniSlamGraphLib/VariableLengthVector.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/Android.mk" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/Android.mk~c1c4fe627a2deacd274c8f1929dbbb44ae5e7e26" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/CMakeLists.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/CUDADefines.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/Cholesky.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/FileUtils.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/FileUtils.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/HomkerMap.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/Image.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/KeyValueConfig.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/KeyValueConfig.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/LexicalCast.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/MathUtils.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/Matrix.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/MemoryBlock.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/MemoryBlockPersister.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/MemoryDeviceType.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/MetalContext.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/MetalContext.mm" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/NVTimer.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/PlatformIndependence.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/SE3Pose.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/SE3Pose.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/SVMClassifier.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ORUtils/Vector.h" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/package.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/CLIEngine.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/InfiniTAMCheck.cu" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/RosWrappedMain.cpp" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/libs/ITMLib/Utils/ITMLibSettings.cpp" afterPath="$PROJECT_DIR$/libs/ITMLib/Utils/ITMLibSettings.cpp" />
+      <change beforePath="$PROJECT_DIR$/libs/ITMLib/Utils/ITMLibSettings.h" afterPath="$PROJECT_DIR$/libs/ITMLib/Utils/ITMLibSettings.h" />
+      <change beforePath="$PROJECT_DIR$/src/RosWrappedMain.cpp" afterPath="$PROJECT_DIR$/src/RosWrappedMain.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -410,11 +113,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ITMSceneReconstructionEngine_CPU.tpp" pinned="false" current-in-tab="true">
+          <file leaf-file-name="ITMSceneReconstructionEngine_CPU.tpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/CPU/ITMSceneReconstructionEngine_CPU.tpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-7121">
-                  <caret line="30" column="32" lean-forward="false" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+                <state relative-caret-position="358">
+                  <caret line="312" column="2" lean-forward="false" selection-start-line="312" selection-start-column="2" selection-end-line="312" selection-end-column="2" />
                   <folding />
                 </state>
               </provider>
@@ -450,6 +153,18 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="RosWrappedMain.cpp" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/RosWrappedMain.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="389">
+                  <caret line="153" column="0" lean-forward="true" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#90#108#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="ITMMultiSceneAccess.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMMultiSceneAccess.h">
               <provider selected="true" editor-type-id="text-editor">
@@ -473,8 +188,8 @@
           <file leaf-file-name="CLIEngine.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/CLIEngine.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="756">
-                  <caret line="35" column="35" lean-forward="false" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
+                <state relative-caret-position="200">
+                  <caret line="73" column="24" lean-forward="false" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="24" />
                   <folding />
                 </state>
               </provider>
@@ -490,47 +205,25 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ITMLocalMap.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/libs/ITMLib/Objects/Scene/ITMLocalMap.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="405">
-                  <caret line="21" column="36" lean-forward="false" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
         </leaf>
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="CLIEngine.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/include/CLIEngine.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1026">
-                  <caret line="38" column="32" lean-forward="false" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
-                  <folding>
-                    <element signature="e#104#136#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="ITMLibSettings.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/libs/ITMLib/Utils/ITMLibSettings.cpp">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="189">
-                  <caret line="75" column="28" lean-forward="true" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="28" />
+                  <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="31" selection-end-line="9" selection-end-column="103" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ITMLibSettings.h" pinned="false" current-in-tab="false">
+          <file leaf-file-name="ITMLibSettings.h" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/libs/ITMLib/Utils/ITMLibSettings.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="109">
-                  <caret line="60" column="18" lean-forward="false" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
+                <state relative-caret-position="340">
+                  <caret line="64" column="118" lean-forward="false" selection-start-line="64" selection-start-column="118" selection-end-line="64" selection-end-column="118" />
                   <folding />
                 </state>
               </provider>
@@ -539,8 +232,8 @@
           <file leaf-file-name="ITMSceneParams.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/libs/ITMLib/Utils/ITMSceneParams.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="136">
-                  <caret line="28" column="51" lean-forward="false" selection-start-line="27" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+                <state relative-caret-position="230">
+                  <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
                   <folding />
                 </state>
               </provider>
@@ -549,21 +242,9 @@
           <file leaf-file-name="ITMSceneReconstructionEngine_Shared.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/Shared/ITMSceneReconstructionEngine_Shared.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="5076">
+                <state relative-caret-position="637">
                   <caret line="188" column="45" lean-forward="false" selection-start-line="188" selection-start-column="45" selection-end-line="188" selection-end-column="45" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="RosWrappedMain.cpp" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/RosWrappedMain.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="179">
-                  <caret line="40" column="37" lean-forward="false" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="37" />
-                  <folding>
-                    <element signature="e#90#108#0" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -648,9 +329,10 @@
         <option value="$PROJECT_DIR$/src/InfiniTAM_cli.cpp" />
         <option value="$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/Shared/ITMSceneReconstructionEngine_Shared.h" />
         <option value="$PROJECT_DIR$/include/InfiniTAMCheck.h" />
-        <option value="$PROJECT_DIR$/src/RosWrappedMain.cpp" />
         <option value="$PROJECT_DIR$/src/InfiniTAMCheck.cu" />
         <option value="$PROJECT_DIR$/libs/ITMLib/Utils/ITMLibSettings.cpp" />
+        <option value="$PROJECT_DIR$/libs/ITMLib/Utils/ITMLibSettings.h" />
+        <option value="$PROJECT_DIR$/src/RosWrappedMain.cpp" />
       </list>
     </option>
   </component>
@@ -1040,12 +722,12 @@
       <workItem from="1548220633297" duration="3550000" />
       <workItem from="1548224232227" duration="85781000" />
       <workItem from="1548950261963" duration="80000" />
-      <workItem from="1548950354002" duration="14376000" />
+      <workItem from="1548950354002" duration="15504000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107851000" />
+    <option name="totallyTimeSpent" value="108979000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1062,12 +744,12 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24976349" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2003367" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12962963" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33033708" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33033708" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1303,14 +985,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/Shared/ITMSceneReconstructionEngine_Shared.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5076">
-          <caret line="188" column="45" lean-forward="false" selection-start-line="188" selection-start-column="45" selection-end-line="188" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/CUDA/ITMSceneReconstructionEngine_CUDA.tcu">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="419">
@@ -1369,14 +1043,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CLIEngine.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="35" column="35" lean-forward="false" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libs/ITMLib/Core/ITMBasicEngine.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
@@ -1401,14 +1067,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libs/ITMLib/Utils/ITMSceneParams.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="28" column="51" lean-forward="false" selection-start-line="27" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libs/ORUtils/Vector.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6075">
@@ -1417,20 +1075,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/CLIEngine.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="38" column="32" lean-forward="false" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
-          <folding>
-            <element signature="e#104#136#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libs/ITMLib/Utils/ITMMath.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/CPU/ITMSceneReconstructionEngine_CPU.tpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="312" column="2" lean-forward="false" selection-start-line="312" selection-start-column="2" selection-end-line="312" selection-end-column="2" />
           <folding />
         </state>
       </provider>
@@ -1446,34 +1102,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/CPU/ITMSceneReconstructionEngine_CPU.tpp">
+    <entry file="file://$PROJECT_DIR$/libs/ITMLib/Engines/Reconstruction/Shared/ITMSceneReconstructionEngine_Shared.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7121">
-          <caret line="30" column="32" lean-forward="false" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+        <state relative-caret-position="637">
+          <caret line="188" column="45" lean-forward="false" selection-start-line="188" selection-start-column="45" selection-end-line="188" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libs/ITMLib/Utils/ITMLibSettings.h">
+    <entry file="file://$PROJECT_DIR$/src/CLIEngine.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="60" column="18" lean-forward="false" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
+        <state relative-caret-position="200">
+          <caret line="73" column="24" lean-forward="false" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="24" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/ITMLib/Utils/ITMSceneParams.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/CLIEngine.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="38" column="32" lean-forward="false" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+          <folding>
+            <element signature="e#104#136#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/libs/ITMLib/Utils/ITMLibSettings.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
-          <caret line="75" column="28" lean-forward="true" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="28" />
+          <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="31" selection-end-line="9" selection-end-column="103" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/ITMLib/Utils/ITMLibSettings.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="64" column="118" lean-forward="false" selection-start-line="64" selection-start-column="118" selection-end-line="64" selection-end-column="118" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RosWrappedMain.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="40" column="37" lean-forward="false" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="37" />
+        <state relative-caret-position="389">
+          <caret line="153" column="0" lean-forward="true" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
           <folding>
             <element signature="e#90#108#0" expanded="true" />
           </folding>

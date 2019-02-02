@@ -6,8 +6,9 @@ using namespace ITMLib;
 #include <climits>
 #include <cmath>
 
-ITMLibSettings::ITMLibSettings(void)
-:	sceneParams(0.5f, 100, 0.1f, 0.01f, 5.0f, false),
+ITMLibSettings::ITMLibSettings(float mu, int maxW, float voxelSize,
+							   float viewFrustum_min, float viewFrustum_max, bool stopIntegratingAtMaxW)
+:	sceneParams(mu, maxW, voxelSize, viewFrustum_min, viewFrustum_max, stopIntegratingAtMaxW),
 	surfelSceneParams(0.5f, 0.6f, static_cast<float>(20 * M_PI / 180), 0.01f, 0.004f, 3.5f, 25.0f, 4, 1.0f, 5.0f, 20, 10000000, true, true)
 {
 	// skips every other point when using the colour renderer for creating a point cloud

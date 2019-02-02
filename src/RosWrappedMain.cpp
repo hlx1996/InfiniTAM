@@ -135,7 +135,7 @@ int main(int argc, char **argv) {
     ros::Subscriber subDepthImage = node.subscribe("/open_quadtree_mapping/depth", 1, imageCallback);
 //    ros::Subscriber subRGBImage = node.subscribe("/mv_25001498/image_raw", 1, rgbcallback);
     ros::Subscriber subPose = node.subscribe("/vins_estimator/camera_pose", 1, poseStampedCallback);
-    const char *calibFile = "/home/tommy/calib.txt";
+    const char *calibFile = "../calib.txt";
 
 //    ros::Subscriber subDepthImage = node.subscribe("/tum_warpper/float_gt_depth", 1, imageCallback);
 //    ros::Subscriber subRGBImage = node.subscribe("/tum_warpper/image", 1, rgbcallback);
@@ -146,8 +146,11 @@ int main(int argc, char **argv) {
 
     ITMLib::ITMRGBDCalib calib;
     readCalibFile(calibFile, calib);
-
-    ITMLibSettings *internalSettings = new ITMLibSettings();
+    float mu = 0.5f;
+    float voxelSize = 0.1f;
+    float viewFrustum_min= 0.01f;
+    float viewFrustum_max=5.0f;
+    ITMLibSettings *internalSettings = new ITMLibSettings(mu, 100, voxelSize, viewFrustum_min, viewFrustum_max);
 
     mainEngine = new ITMBasicEngine<ITMVoxel, ITMVoxelIndex>(
             internalSettings, calib, calib.intrinsics_rgb.imgSize, calib.intrinsics_d.imgSize
