@@ -103,6 +103,16 @@ namespace ITMLib
 		const ITMHashEntry *GetEntries(void) const { return hashEntries->GetData(memoryType); }
 		ITMHashEntry *GetEntries(void) { return hashEntries->GetData(memoryType); }
 
+
+		ORUtils::MemoryBlock<ITMHashEntry> *hashEntries_cpu;
+		ITMHashEntry *GetEntries_CPU(void) {
+			hashEntries_cpu = new ORUtils::MemoryBlock<ITMHashEntry>(hashEntries->dataSize, MEMORYDEVICE_CPU);
+			hashEntries_cpu->SetFrom(hashEntries, ORUtils::MemoryBlock<ITMHashEntry>::CUDA_TO_CPU);
+			ITMHashEntry *tmp =hashEntries_cpu->GetData(MEMORYDEVICE_CPU);
+//			delete hashEntries_cpu;
+			return tmp;
+		}
+
 		const IndexData *getIndexData(void) const { return hashEntries->GetData(memoryType); }
 		IndexData *getIndexData(void) { return hashEntries->GetData(memoryType); }
 

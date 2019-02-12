@@ -31,16 +31,60 @@ bool save() {
     std::cout << ss.str() << std::endl;
 
     mainEngine->SaveSceneToMesh(ss.str().c_str());
+
 }
 
 cv_bridge::CvImagePtr cv_rgb_image_;
 int cnt = 0;
 
+template<class TVoxel=ITMVoxel>
+std::vector<Vector3f> getAllVoxelsInThreshold(ITMLib::ITMMainEngine *mainEngine, float threshold = 0.5) {
+    ITMLib::ITMScene<TVoxel, ITMVoxelIndex> *scene
+            = dynamic_cast<ITMLib::ITMBasicEngine<ITMVoxel_s, ITMVoxelIndex> *>(mainEngine)->getScene();
+    TVoxel *localVBA = scene->localVBA.GetVoxelBlocks_CPU();
+    const ITMHashEntry *hashTable = scene->index.GetEntries_CPU();
+    std::vector<Vector3f> vp;
+    int noTotalEntries = scene->index.noTotalEntries;
+
+    for (int entryId = 0; entryId < noTotalEntries; entryId++) {
+        Vector3i globalPos;
+        const ITMHashEntry &currentHashEntry = hashTable[entryId];
+
+        if (currentHashEntry.ptr < 0) continue;
+
+        globalPos = currentHashEntry.pos.toInt() * SDF_BLOCK_SIZE;
+        TVoxel *localVoxelBlock = &(localVBA[currentHashEntry.ptr * (SDF_BLOCK_SIZE3)]);
+        for (int z = 0; z < SDF_BLOCK_SIZE; z++)
+            for (int y = 0; y < SDF_BLOCK_SIZE; y++)
+                for (int x = 0; x < SDF_BLOCK_SIZE; x++) {
+                    float sdf = TVoxel::valueToFloat(localVoxelBlock[x + y * SDF_BLOCK_SIZE +
+                                                                     z * SDF_BLOCK_SIZE * SDF_BLOCK_SIZE].sdf);
+                    if (sdf > -threshold && sdf < threshold) {
+                        Vector3f tmp = ((globalPos + Vector3i(x, y, z)).toFloat()
+                                        + Vector3f(0.5, 0.5, 0.5)) * scene->sceneParams->voxelSize;
+                        vp.push_back(tmp);
+                    }
+                }
+    }
+    return vp;
+}
+
+std::vector<Vector3f> getTriangleMeshPoints() {
+    return dynamic_cast<ITMLib::ITMBasicEngine<ITMVoxel_s, ITMVoxelIndex> *>(mainEngine)->getTriangleMeshPoints();
+}
+
 void imageCallback(const sensor_msgs::Image::ConstPtr &msg) {
     if (cnt++ < 25) return;
+    printf("%d\n", cnt);
+    if (cnt % 30 == 0) {
+        printf("%d\t%d\n", cnt, getAllVoxelsInThreshold(mainEngine).size());
+    }
+    if (cnt % 100 == 0) {
+        printf("%d\t%d\n", cnt, getTriangleMeshPoints().size());
+    }
     if (cnt == 4000) std::thread(save).join();
-    std::cout << "image\t" << msg->header.stamp << "\t" << msg->encoding << "\t"
-              << (int) msg->is_bigendian << std::endl;
+//    std::cout << "image\t" << msg->header.stamp << "\t" << msg->encoding << "\t"
+//              << (int) msg->is_bigendian << std::endl;
 
     cv_bridge::CvImagePtr cv_depth_image_ = cv_bridge::toCvCopy(msg, msg->encoding);
     // When streaming raw images from Gazebo.
@@ -81,14 +125,11 @@ void imageCallback(const sensor_msgs::Image::ConstPtr &msg) {
     printf("%f\t%f\t%f\t%f\n", t(0), t(1), t(2), InfiniTAMCheck(mainEngine, -3.3, -2.5, -1.4, 0.1));
 
 
-
-
-
     count++;
 }
 
 void poseStampedCallback(const geometry_msgs::PoseStamped::ConstPtr &msg) {
-    std::cout << "poseStamp\t" << msg->header.stamp << std::endl;
+//    std::cout << "poseStamp\t" << msg->header.stamp << std::endl;
     t = Eigen::Vector3d(msg->pose.position.x,
                         msg->pose.position.y,
                         msg->pose.position.z);
@@ -105,7 +146,7 @@ void poseStampedCallback(const geometry_msgs::PoseStamped::ConstPtr &msg) {
 }
 
 void rgbcallback(const sensor_msgs::Image::ConstPtr &msg) {
-    std::cout << "poseStamp\t" << msg->header.stamp << std::endl;
+    std::cout << "rgb\t" << msg->header.stamp << std::endl;
     cv_rgb_image_ = cv_bridge::toCvCopy(msg, msg->encoding);
     // When streaming raw images from Gazebo.
 //    if (msg->encoding == sensor_msgs::image_encodings::TYPE_32FC1) {
@@ -148,8 +189,8 @@ int main(int argc, char **argv) {
     readCalibFile(calibFile, calib);
     float mu = 0.5f;
     float voxelSize = 0.1f;
-    float viewFrustum_min= 0.01f;
-    float viewFrustum_max=5.0f;
+    float viewFrustum_min = 0.01f;
+    float viewFrustum_max = 5.0f;
     ITMLibSettings *internalSettings = new ITMLibSettings(mu, 100, voxelSize, viewFrustum_min, viewFrustum_max);
 
     mainEngine = new ITMBasicEngine<ITMVoxel, ITMVoxelIndex>(
