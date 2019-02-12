@@ -6,7 +6,7 @@
 #include "../../../ORUtils/Image.h"
 
 #include <stdlib.h>
-
+#include <vector>
 namespace ITMLib
 {
 	class ITMMesh
@@ -111,6 +111,29 @@ namespace ITMLib
 
 			if (shoulDelete) delete cpu_triangles;
 		}
+
+		std::vector<Vector3f> *getTriangleMeshPoints() {
+            ORUtils::MemoryBlock<Triangle> *cpu_triangles;
+            bool shoulDelete = false;
+            if (memoryType == MEMORYDEVICE_CUDA) {
+                cpu_triangles = new ORUtils::MemoryBlock<Triangle>(noMaxTriangles, MEMORYDEVICE_CPU);
+                cpu_triangles->SetFrom(triangles, ORUtils::MemoryBlock<Triangle>::CUDA_TO_CPU);
+                shoulDelete = true;
+            } else cpu_triangles = triangles;
+
+            Triangle *triangleArray = cpu_triangles->GetData(MEMORYDEVICE_CPU);
+            std::vector<Vector3f> *vp = new std::vector<Vector3f>();
+            vp->reserve(1000000);
+
+            for (uint i = 0; i < noTotalTriangles; i++) {
+                vp->push_back(triangleArray[i].p2);
+                vp->push_back(triangleArray[i].p1);
+                vp->push_back(triangleArray[i].p0);
+            }
+            if (shoulDelete) delete cpu_triangles;
+            return vp;
+        }
+
 
 		~ITMMesh()
 		{

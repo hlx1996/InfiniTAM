@@ -17,6 +17,7 @@ namespace ITMLib
 	private:
 		ORUtils::MemoryBlock<TVoxel> *voxelBlocks;
 		ORUtils::MemoryBlock<int> *allocationList;
+		ORUtils::MemoryBlock<TVoxel> *voxelBlocks_cpu;
 
 		MemoryDeviceType memoryType;
 
@@ -24,6 +25,14 @@ namespace ITMLib
 		inline TVoxel *GetVoxelBlocks(void) { return voxelBlocks->GetData(memoryType); }
 		inline const TVoxel *GetVoxelBlocks(void) const { return voxelBlocks->GetData(memoryType); }
 		int *GetAllocationList(void) { return allocationList->GetData(memoryType); }
+
+		TVoxel *GetVoxelBlocks_CPU(void) {
+            voxelBlocks_cpu = new ORUtils::MemoryBlock<TVoxel>(voxelBlocks->dataSize, MEMORYDEVICE_CPU);
+            voxelBlocks_cpu->SetFrom(voxelBlocks, ORUtils::MemoryBlock<TVoxel>::CUDA_TO_CPU);
+            TVoxel *tmp = voxelBlocks_cpu->GetData(MEMORYDEVICE_CPU);
+//            delete voxelBlocks_cpu;
+            return tmp;
+        }
 
 #ifdef COMPILE_WITH_METAL
 		const void* GetVoxelBlocks_MB() const { return voxelBlocks->GetMetalBuffer(); }

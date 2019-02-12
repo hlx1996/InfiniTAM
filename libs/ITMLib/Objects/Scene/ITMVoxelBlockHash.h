@@ -106,6 +106,15 @@ namespace ITMLib
 		const IndexData *getIndexData(void) const { return hashEntries->GetData(memoryType); }
 		IndexData *getIndexData(void) { return hashEntries->GetData(memoryType); }
 
+		ORUtils::MemoryBlock<ITMHashEntry> *hashEntries_cpu;
+		ITMHashEntry *GetEntries_CPU(void) {
+			hashEntries_cpu = new ORUtils::MemoryBlock<ITMHashEntry>(hashEntries->dataSize, MEMORYDEVICE_CPU);
+			hashEntries_cpu->SetFrom(hashEntries, ORUtils::MemoryBlock<ITMHashEntry>::CUDA_TO_CPU);
+			ITMHashEntry *tmp =hashEntries_cpu->GetData(MEMORYDEVICE_CPU);
+//			delete hashEntries_cpu;
+			return tmp;
+		}
+
 		/** Get the list that identifies which entries of the
 		overflow list are allocated. This is used if too
 		many hash collisions caused the buckets to overflow.
