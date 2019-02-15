@@ -26,13 +26,13 @@ using namespace ITMLib;
 ros::Subscriber _subDepthImage, _subPose;
 ros::Publisher  _pub_mesh_vis,  _pub_voxel_vis;
 
-// Eigen::Vector3d    _position;
-// Eigen::Matrix3d    _rotation;
+
 // Eigen::Quaterniond _orientation;
 
 ITMMainEngine * _mainEngine;
 
 std::queue<std::tuple<ros::Time, Eigen::Vector3d, Eigen::Quaterniond>> transformQueue;
+std::queue<sensor_msgs::Image::ConstPtr> imageQueue;
 
 void visualizeMesh (const std::vector<Vector3f>  * meshes);
 void visualizeVoxel(const std::vector<Vector3f>  * voxeles);
@@ -193,51 +193,66 @@ void imageCallback(const sensor_msgs::Image::ConstPtr &msg) {
         //printf("%d\t%d\n", _depth_img_cnt, meshes.size());
     }
 
+    imageQueue.push(msg);
+
     //if (cnt == 1500) std::thread(save).join();
-    std::cout << "Image timestamp\t" << msg->header.stamp << "\t" << std::endl;
+    // std::cout << "Image timestamp\t" << msg->header.stamp << "\t" << std::endl;
 
     bool newPos = false;
     Eigen::Vector3d _position;
     Eigen::Quaterniond _orientation;
-    ros::Time _poseTime;
-    while (!transformQueue.empty() && std::get<0>(transformQueue.front()) <= msg->header.stamp) {
-        _poseTime = std::get<0>(transformQueue.front());
-        _position = std::get<1>(transformQueue.front());
-        _orientation = std::get<2>(transformQueue.front());
-        transformQueue.pop();
-        newPos = true;
+    ros::Time _poseTime, _imageTime;
+    while (!imageQueue.empty()) {
+        newPos = false;
+        _imageTime = imageQueue.front()->header.stamp;
+        while (transformQueue.size() > 1 && std::get<0>(transformQueue.front()) <= _imageTime + ros::Duration(1e-3)) {
+            _poseTime = std::get<0>(transformQueue.front());
+            _position = std::get<1>(transformQueue.front());
+            _orientation = std::get<2>(transformQueue.front());
+            transformQueue.pop();
+            newPos = true;
+        }
+        if (transformQueue.empty() || std::get<0>(transformQueue.front()) <= _imageTime + ros::Duration(1e-3)) {
+            continue;
+        }
+        if (!newPos) {
+            imageQueue.pop();
+            continue;
+        }
+        std::cout << "Alignment" << std::endl;
+        std::cout << "Pose timestamp\t" << _poseTime << "\t" << std::endl;
+        std::cout << "Image timestamp\t" << _imageTime << "\t" << std::endl;
+
+
+        _cv_depth_image = cv_bridge::toCvCopy(imageQueue.front(), imageQueue.front()->encoding);
+        if (imageQueue.front()->encoding == sensor_msgs::image_encodings::TYPE_32FC1) 
+        {
+            constexpr double kDepthScalingFactor = 1000.0;
+            (_cv_depth_image->image).convertTo(_cv_depth_image->image, CV_16UC1, kDepthScalingFactor);
+        }
+
+    //    std::vector<int> compression_params; // Stores the compression parameters
+    //    compression_params.push_back(CV_IMWRITE_PXM_BINARY); // Set to PXM compression
+    //    compression_params.push_back(0); // Set type of PXM in our case PGM
+    //    char buff[10], buff2[10], buff3[10];
+    //    std::string imageFilename = buff;
+    //    std::string poseFilename = buff2;
+    //    std::string rgbFilename = buff3;
+    //    cv::imwrite(imageFilename, _cv_depth_image->image, compression_params);
+    //    cv::imwrite(rgbFilename, _cv_rgb_image->image, compression_params);
+        Eigen::Matrix3d _rotation    = _orientation.normalized().toRotationMatrix();
+
+        Matrix4f camera_pose( _rotation(0, 0), _rotation(1, 0), _rotation(2, 0), 0,
+                              _rotation(0, 1), _rotation(1, 1), _rotation(2, 1), 0,
+                              _rotation(0, 2), _rotation(1, 2), _rotation(2, 2), 0,
+                              _position(0)   , _position(1)   , _position(2),    1 
+                            );
+
+        CLIEngine::Instance()->Run(_cv_depth_image, camera_pose);
+        //InfiniTAMCheck(_mainEngine, -3.3, -2.5, -1.4, 0.1);
+        //printf("%f\t%f\t%f\t%f\n", t(0), t(1), t(2), InfiniTAMCheck(_mainEngine, -3.3, -2.5, -1.4, 0.1) );
+        imageQueue.pop();
     }
-    if (!newPos) return;
-    std::cout << "Corresponding pose timestamp\t" << _poseTime <<"\t" << transformQueue.size() << "\t" << std::endl;
-
-
-    _cv_depth_image = cv_bridge::toCvCopy(msg, msg->encoding);
-    if (msg->encoding == sensor_msgs::image_encodings::TYPE_32FC1) 
-    {
-        constexpr double kDepthScalingFactor = 1000.0;
-        (_cv_depth_image->image).convertTo(_cv_depth_image->image, CV_16UC1, kDepthScalingFactor);
-    }
-
-//    std::vector<int> compression_params; // Stores the compression parameters
-//    compression_params.push_back(CV_IMWRITE_PXM_BINARY); // Set to PXM compression
-//    compression_params.push_back(0); // Set type of PXM in our case PGM
-//    char buff[10], buff2[10], buff3[10];
-//    std::string imageFilename = buff;
-//    std::string poseFilename = buff2;
-//    std::string rgbFilename = buff3;
-//    cv::imwrite(imageFilename, _cv_depth_image->image, compression_params);
-//    cv::imwrite(rgbFilename, _cv_rgb_image->image, compression_params);
-    Eigen::Matrix3d _rotation    = _orientation.normalized().toRotationMatrix();
-
-    Matrix4f camera_pose( _rotation(0, 0), _rotation(1, 0), _rotation(2, 0), 0,
-                          _rotation(0, 1), _rotation(1, 1), _rotation(2, 1), 0,
-                          _rotation(0, 2), _rotation(1, 2), _rotation(2, 2), 0,
-                          _position(0)   , _position(1)   , _position(2),    1 
-                        );
-
-    CLIEngine::Instance()->Run(_cv_depth_image, camera_pose);
-    //InfiniTAMCheck(_mainEngine, -3.3, -2.5, -1.4, 0.1);
-    //printf("%f\t%f\t%f\t%f\n", t(0), t(1), t(2), InfiniTAMCheck(_mainEngine, -3.3, -2.5, -1.4, 0.1) );
 }
 
 //void poseStampedCallback(const geometry_msgs::PoseStamped::ConstPtr &msg) {
