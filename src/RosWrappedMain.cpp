@@ -12,34 +12,38 @@
 #include <ros/ros.h>
 #include <Eigen/Eigen>
 #include <sensor_msgs/Image.h>
+#include <nav_msgs/Odometry.h>
 #include <visualization_msgs/Marker.h>
 #include <geometry_msgs/PoseStamped.h>
 #include <opencv2/opencv.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 #include <cv_bridge/cv_bridge.h>
-
+#include <tuple>
+#include <queue>
 using namespace InfiniTAM::Engine;
 using namespace ITMLib;
 
 ros::Subscriber _subDepthImage, _subPose;
 ros::Publisher  _pub_mesh_vis,  _pub_voxel_vis;
 
-Eigen::Vector3d    _position;
-Eigen::Matrix3d    _rotation;
-Eigen::Quaterniond _orientation;
+// Eigen::Vector3d    _position;
+// Eigen::Matrix3d    _rotation;
+// Eigen::Quaterniond _orientation;
 
 ITMMainEngine * _mainEngine;
 
+std::queue<std::tuple<ros::Time, Eigen::Vector3d, Eigen::Quaterniond>> transformQueue;
+
 void visualizeMesh (const std::vector<Vector3f>  * meshes);
-//void visualizeVoxel(const std::vector<Vector3f>  & voxeles);
+void visualizeVoxel(const std::vector<Vector3f>  * voxeles);
 
 template<class TVoxel=ITMVoxel>
-std::vector<Vector3f> getAllVoxelsInThreshold(ITMLib::ITMMainEngine *mainEngine, float threshold = 0.5) {
+std::vector<Vector3f> * getAllVoxelsInThreshold(ITMLib::ITMMainEngine *mainEngine, float threshold = 0.5) {
     ITMLib::ITMScene<TVoxel, ITMVoxelIndex> *scene
             = dynamic_cast<ITMLib::ITMBasicEngine<ITMVoxel_s, ITMVoxelIndex> *>(mainEngine)->getScene();
     TVoxel *localVBA = scene->localVBA.GetVoxelBlocks_CPU();
     const ITMHashEntry *hashTable = scene->index.GetEntries_CPU();
-    std::vector<Vector3f> vp;
+    std::vector<Vector3f> * vp = new std::vector<Vector3f>();
     int noTotalEntries = scene->index.noTotalEntries;
 
     for (int entryId = 0; entryId < noTotalEntries; entryId++) {
@@ -58,7 +62,7 @@ std::vector<Vector3f> getAllVoxelsInThreshold(ITMLib::ITMMainEngine *mainEngine,
                     if (sdf > -threshold && sdf < threshold) {
                         Vector3f tmp = ((globalPos + Vector3i(x, y, z)).toFloat()
                                         + Vector3f(0.5, 0.5, 0.5)) * scene->sceneParams->voxelSize;
-                        vp.push_back(tmp);
+                        vp->push_back(tmp);
                     }
                 }
     }
@@ -69,7 +73,7 @@ std::vector<Vector3f> *getTriangleMeshPoints(ITMLib::ITMMainEngine *mainEngine) 
     return dynamic_cast<ITMLib::ITMBasicEngine<ITMVoxel_s, ITMVoxelIndex> *>(mainEngine)->getTriangleMeshPoints();
 }
 
-bool save(ITMMainEngine * mainEngine) {
+void save(ITMMainEngine * mainEngine) {
     time_t seconds = time(0);
     std::stringstream ss;
     ss << seconds << ".stl";
@@ -78,14 +82,22 @@ bool save(ITMMainEngine * mainEngine) {
     mainEngine->SaveSceneToMesh(ss.str().c_str());
 }
 
-bool visualize_mesh(ITMMainEngine * mainEngine) {
-    std::cout<<"1"<<std::endl;
+void visualize_mesh(ITMMainEngine * mainEngine) {
+    //std::cout<< "1" <<std::endl;
     auto meshes = getTriangleMeshPoints(mainEngine);
-    std::cout<<"2"<<std::endl;
     visualizeMesh(meshes);
-    std::cout<<"3 !!!!!! "<< meshes->size() <<std::endl;
+    //std::cout<< meshes->size() <<std::endl;
 
     delete meshes;
+}
+
+void visualize_voxel(ITMMainEngine * mainEngine, double thr) {
+    //std::cout<< "1" <<std::endl;
+    auto voxels = getAllVoxelsInThreshold(mainEngine, thr);
+    visualizeVoxel(voxels);
+    //std::cout<< meshes->size() <<std::endl;
+
+    delete voxels;
 }
 
 std::string _pkg_path;
@@ -118,23 +130,49 @@ void visualizeMesh(const std::vector<Vector3f> * meshes)
     mesh_ros.scale.y = 1.0;
     mesh_ros.scale.z = 1.0;
 
-    int mesh_size = meshes->size() / 3;
+    int mesh_size = meshes->size();// / 3;
     geometry_msgs::Point pt;
     for(int i = 0; i < mesh_size; i++ )
     {   
-        pt.x = (*meshes)[i * 3].x;
-        pt.y = (*meshes)[i * 3].y;
-        pt.z = (*meshes)[i * 3].z;
+        pt.x = (*meshes)[i].x;
+        pt.y = (*meshes)[i].y;
+        pt.z = (*meshes)[i].z;
         mesh_ros.points.push_back(pt);
+    }
 
-        pt.x = (*meshes)[i * 3 + 1].x;
-        pt.y = (*meshes)[i * 3 + 1].y;
-        pt.z = (*meshes)[i * 3 + 1].z;
-        mesh_ros.points.push_back(pt);
+    _pub_mesh_vis.publish(mesh_ros);
+}
 
-        pt.x = (*meshes)[i * 3 + 2].x;
-        pt.y = (*meshes)[i * 3 + 2].y;
-        pt.z = (*meshes)[i * 3 + 2].z;
+void visualizeVoxel(const std::vector<Vector3f> * voxeles)
+{   
+    visualization_msgs::Marker mesh_ros;
+    mesh_ros.header.stamp       = ros::Time::now();
+    mesh_ros.header.frame_id    = "map";
+
+    mesh_ros.ns = "infinitam_ros/voxel";
+    mesh_ros.id = 0;
+    mesh_ros.type = visualization_msgs::Marker::CUBE_LIST;
+
+    mesh_ros.pose.orientation.x = 0.0;
+    mesh_ros.pose.orientation.y = 0.0;
+    mesh_ros.pose.orientation.z = 0.0;
+    mesh_ros.pose.orientation.w = 1.0;
+    mesh_ros.color.a = 1.0;
+    mesh_ros.color.r = 1.0;
+    mesh_ros.color.g = 0.0;
+    mesh_ros.color.b = 0.0;
+
+    mesh_ros.scale.x = _voxelSize;
+    mesh_ros.scale.y = _voxelSize;
+    mesh_ros.scale.z = _voxelSize;
+
+    int mesh_size = voxeles->size();
+    geometry_msgs::Point pt;
+    for(int i = 0; i < mesh_size; i++ )
+    {   
+        pt.x = (*voxeles)[i].x;
+        pt.y = (*voxeles)[i].y;
+        pt.z = (*voxeles)[i].z;
         mesh_ros.points.push_back(pt);
     }
 
@@ -146,19 +184,32 @@ void imageCallback(const sensor_msgs::Image::ConstPtr &msg) {
     if (_depth_img_cnt % 30 == 0) 
     {   
         //printf("%d\t%d\n", _depth_img_cnt, meshes.size());
+        std::thread(visualize_voxel, _mainEngine, 0.5).detach();//join();//;
     }
     if (_depth_img_cnt % 100 == 0) 
     {
-        //std::thread(save).join();
-        std::cout << "Creating Thread" << std::endl;
-        std::thread(visualize_mesh, _mainEngine).detach();
+        std::cout  << "Creating Thread" << std::endl;
+        std::thread(visualize_mesh, _mainEngine).detach();//join();//;
         //printf("%d\t%d\n", _depth_img_cnt, meshes.size());
     }
 
     //if (cnt == 1500) std::thread(save).join();
+    std::cout << "Image timestamp\t" << msg->header.stamp << "\t" << std::endl;
 
-    std::cout << "image\t" << msg->header.stamp << "\t" << msg->encoding << "\t"
-              << (int) msg->is_bigendian << std::endl;
+    bool newPos = false;
+    Eigen::Vector3d _position;
+    Eigen::Quaterniond _orientation;
+    ros::Time _poseTime;
+    while (!transformQueue.empty() && std::get<0>(transformQueue.front()) <= msg->header.stamp) {
+        _poseTime = std::get<0>(transformQueue.front());
+        _position = std::get<1>(transformQueue.front());
+        _orientation = std::get<2>(transformQueue.front());
+        transformQueue.pop();
+        newPos = true;
+    }
+    if (!newPos) return;
+    std::cout << "Corresponding pose timestamp\t" << _poseTime <<"\t" << transformQueue.size() << "\t" << std::endl;
+
 
     _cv_depth_image = cv_bridge::toCvCopy(msg, msg->encoding);
     if (msg->encoding == sensor_msgs::image_encodings::TYPE_32FC1) 
@@ -176,6 +227,7 @@ void imageCallback(const sensor_msgs::Image::ConstPtr &msg) {
 //    std::string rgbFilename = buff3;
 //    cv::imwrite(imageFilename, _cv_depth_image->image, compression_params);
 //    cv::imwrite(rgbFilename, _cv_rgb_image->image, compression_params);
+    Eigen::Matrix3d _rotation    = _orientation.normalized().toRotationMatrix();
 
     Matrix4f camera_pose( _rotation(0, 0), _rotation(1, 0), _rotation(2, 0), 0,
                           _rotation(0, 1), _rotation(1, 1), _rotation(2, 1), 0,
@@ -188,18 +240,20 @@ void imageCallback(const sensor_msgs::Image::ConstPtr &msg) {
     //printf("%f\t%f\t%f\t%f\n", t(0), t(1), t(2), InfiniTAMCheck(_mainEngine, -3.3, -2.5, -1.4, 0.1) );
 }
 
-void poseStampedCallback(const geometry_msgs::PoseStamped::ConstPtr &msg) {
+//void poseStampedCallback(const geometry_msgs::PoseStamped::ConstPtr &msg) {
+void poseStampedCallback(const nav_msgs::Odometry::ConstPtr &msg) {
     //std::cout << "poseStamp\t" << msg->header.stamp << std::endl;
-    _position    = Eigen::Vector3d(msg->pose.position.x,
-                                   msg->pose.position.y,
-                                   msg->pose.position.z);
+    Eigen::Vector3d _position    = Eigen::Vector3d(msg->pose.pose.position.x,
+                                   msg->pose.pose.position.y,
+                                   msg->pose.pose.position.z);
 
-    _orientation = Eigen::Quaterniond(msg->pose.orientation.w,
-                                      msg->pose.orientation.x,
-                                      msg->pose.orientation.y,
-                                      msg->pose.orientation.z);
+    Eigen::Quaterniond _orientation = Eigen::Quaterniond(msg->pose.pose.orientation.w,
+                                      msg->pose.pose.orientation.x,
+                                      msg->pose.pose.orientation.y,
+                                      msg->pose.pose.orientation.z);
     
-    _rotation    = _orientation.normalized().toRotationMatrix();
+
+    transformQueue.push(std::make_tuple(msg->header.stamp, _position, _orientation));
 }
 
 void rgbcallback(const sensor_msgs::Image::ConstPtr &msg) {
@@ -229,8 +283,14 @@ int main(int argc, char **argv)
     nh.param( "fusion_param/viewFrustum_min", _viewFrustum_min, 0.01 );
     nh.param( "fusion_param/viewFrustum_max", _viewFrustum_max, 5.0  );
 
-    _subDepthImage = nh.subscribe("/open_quadtree_mapping/depth", 50, imageCallback);
-    _subPose       = nh.subscribe("/vins_estimator/camera_pose" , 50, poseStampedCallback);
+    /*_subDepthImage = nh.subscribe("/open_quadtree_mapping/depth", 1, imageCallback);
+    _subPose       = nh.subscribe("/vins_estimator/camera_pose" ,   1, poseStampedCallback);*/
+
+    /*_subDepthImage = nh.subscribe("/icl_nuim_wapper/gt_depth", 1, imageCallback);
+    _subPose       = nh.subscribe("/icl_nuim_wapper/cur_pose" , 1, poseStampedCallback);*/
+    
+    _subDepthImage = nh.subscribe("/sgbm_ros_node/depth_image",   10, imageCallback);
+    _subPose       = nh.subscribe("/vins_estimator/camera_pose",  10, poseStampedCallback);
 
     _pub_mesh_vis  = nh.advertise<visualization_msgs::Marker>("infinitam_mesh_vis", 1);
 
@@ -240,7 +300,7 @@ int main(int argc, char **argv)
     ITMLib::ITMRGBDCalib calib;
     readCalibFile(calibFile, calib);
     
-    ITMLibSettings * _internalSettings = new ITMLibSettings(_mu, 100, _voxelSize, _viewFrustum_min, _viewFrustum_max);
+    ITMLibSettings * _internalSettings = new ITMLibSettings(_mu, 10, _voxelSize, _viewFrustum_min, _viewFrustum_max);
 
     _mainEngine = new ITMBasicEngine<ITMVoxel, ITMVoxelIndex>(
             _internalSettings, calib, calib.intrinsics_rgb.imgSize, calib.intrinsics_d.imgSize );
@@ -251,7 +311,7 @@ int main(int argc, char **argv)
     spinner.spin();
     //ros::spin();
 
-    std::thread(save, _mainEngine).detach();
+    std::thread(save, _mainEngine).join();
     CLIEngine::Instance()->Shutdown();
 
     delete _mainEngine;

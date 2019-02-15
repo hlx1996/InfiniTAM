@@ -2,7 +2,7 @@
 
   <node pkg = "infinitam_ros" type="infinitam_ros_node" name="infinitam_ros_node" output="screen" required = "true">
       <param name = "ros_node/pkg_path" value="$(find infinitam_ros)" />
-      <param name = "fusion_param/mu"              value="0.3" />
+      <param name = "fusion_param/mu"              value="0.5" />
       <param name = "fusion_param/voxelSize"       value="0.1" />
       <param name = "fusion_param/viewFrustum_min" value="0.5" />
       <param name = "fusion_param/viewFrustum_max" value="5.0" />
