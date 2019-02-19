@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"image",
+				"imageQueue"
+			],
+			[
+				"mesh",
+				"meshes"
+			],
+			[
+				"visua",
+				"visualize_mesh"
+			],
+			[
 				"_vie",
 				"_viewFrustum_max"
 			],
@@ -502,23 +514,71 @@
 			[
 				"Ma",
 				"MatrixXd"
-			],
-			[
-				"norm",
-				"normal"
-			],
-			[
-				"hrep",
-				"hrep_a"
-			],
-			[
-				"vertics",
-				"vertices_num"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "/home/bbgf/catkin_ws/src/gpu_convex_planner/src/gpu_convex_demo.cpp",
+			"settings":
+			{
+				"buffer_size": 68899,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/bbgf/catkin_ws/src/gpu_convex_planner/include/planning/hybrid_a_star.h",
+			"settings":
+			{
+				"buffer_size": 7312,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/bbgf/catkin_ws/src/gpu_convex_planner/src/cluster_engine_cpu.cpp",
+			"settings":
+			{
+				"buffer_size": 3996,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/RosWrappedMain.cpp",
+			"settings":
+			{
+				"buffer_size": 12489,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "launch/depth_input_demo.launch",
+			"settings":
+			{
+				"buffer_size": 723,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "calib.txt",
+			"settings":
+			{
+				"buffer_size": 325,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/home/bbgf/catkin_ws/src/sgbm_ros/src/sgbm_ros.cu",
+			"settings":
+			{
+				"buffer_size": 10009,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -616,13 +676,79 @@
 	},
 	"expanded_folders":
 	[
-		"/home/bbgf/catkin_ws/src/InfiniTAM_ros"
+		"/home/bbgf/catkin_ws/src/InfiniTAM_ros",
+		"/home/bbgf/catkin_ws/src/InfiniTAM_ros/launch",
+		"/home/bbgf/catkin_ws/src/InfiniTAM_ros/libs",
+		"/home/bbgf/catkin_ws/src/InfiniTAM_ros/libs/ITMLib",
+		"/home/bbgf/catkin_ws/src/InfiniTAM_ros/src"
 	],
 	"file_history":
 	[
+		"/home/bbgf/software/opencv-3.4.5/samples/cpp/stereo_calib.cpp",
+		"/home/bbgf/catkin_ws/src/depthnet/src/depthnet_node.cpp",
+		"/home/bbgf/catkin_ws/src/teach_repeat_planer/src/teach_and_repeat.sublime-project",
+		"/home/bbgf/catkin_ws/src/psm_node/CMakeLists.txt",
+		"/home/bbgf/catkin_ws/src/psm_node/scipts/psm_pynode.py",
+		"/home/bbgf/catkin_ws/src/psm_node/launch/visensor.launch",
+		"/home/bbgf/catkin_ws/src/InfiniTAM_ros/launch/depth_input_demo.launch",
+		"/home/bbgf/catkin_ws/src/depthnet/launch/wlq_launch.launch",
+		"/home/bbgf/catkin_ws/src/depthnet/python/depthNet_class.py",
+		"/home/bbgf/catkin_ws/src/depthnet/python/depthNet_model.py",
+		"/home/bbgf/catkin_ws/src/InfiniTAM_ros/calib.txt",
+		"/home/bbgf/catkin_ws/dense_mapping_data/25001498_camera_calib.yaml",
+		"/home/bbgf/catkin_ws/src/planner/pcd_trajectory/src/trajectory_generator_waypoint.cpp",
+		"/home/bbgf/Desktop/sgbm_ros/src/sgbm_ros.cu",
+		"/home/bbgf/catkin_ws/src/cv_bridge/CMakeLists.txt",
+		"/home/bbgf/catkin_ws/src/sgbm_ros/CMakeLists.txt",
+		"/home/bbgf/cv_bridge/CMakeLists.txt",
+		"/home/bbgf/catkin_ws/src/depthnet/launch/low_resolution.launch",
+		"/home/bbgf/catkin_ws/src/depthnet/src/ros_main.cpp",
+		"/home/bbgf/catkin_ws/src/depthnet/CMakeLists.txt",
+		"/home/bbgf/catkin_ws/src/sgbm_ros/src/sgbm_ros.cpp",
+		"/home/bbgf/catkin_ws/src/sgbm_ros/src/sgbm_ros.cu",
+		"/home/bbgf/catkin_ws/src/sgbm_ros/include/sgbm_ros/transport_util.h",
+		"/home/bbgf/catkin_ws/src/depthnet/src/depthnet_node.h",
+		"/home/bbgf/catkin_ws/src/depthnet/src/DepthFusion/device_image.cuh",
+		"/home/bbgf/catkin_ws/src/depthnet/src/DepthFusion/cuda_exception.cuh",
+		"/home/bbgf/catkin_ws/src/open_quadtree_mapping/launch/example.launch",
+		"/home/bbgf/catkin_ws/src/depthnet/src/DepthFusion/depth_fusion.cu",
+		"/home/bbgf/catkin_ws/src/depthnet/src/DepthFusion/depth_fusion.cuh",
+		"/home/bbgf/opencv-3.4.5/build/OpenCVConfig.cmake",
+		"/home/bbgf/catkin_ws/src/InfiniTAM_ros/CMakeLists.txt",
+		"/home/bbgf/catkin_ws/src/depthnet/package.xml",
+		"/home/bbgf/catkin_ws/src/sgbm_ros/src/main.cu",
+		"/home/bbgf/catkin_ws/src/gpu_convex_planner/CMakeLists.txt",
+		"/home/bbgf/catkin_ws/src/InfiniTAM_ros/src/RosWrappedMain.cpp",
+		"/home/bbgf/opencv-3.4.5/CMakeLists.txt",
+		"/home/bbgf/software/opencv-3.4.5/build/OpenCVConfig.cmake",
+		"/home/bbgf/software/opencv-4.0.0/CMakeLists.txt",
+		"/home/bbgf/software/opencv-3.4.0/CMakeLists.txt",
+		"/home/bbgf/software/opencv-3.4.5/CMakeLists.txt",
+		"/home/bbgf/software/opencv-3.4.0/build/OpenCVConfig.cmake",
+		"/home/bbgf/.bashrc",
+		"/home/bbgf/software/opencv-3.3.0/CMakeLists.txt",
+		"/home/bbgf/software/opencv-3.2.0/CMakeLists.txt",
+		"/home/bbgf/catkin_ws/src/depthnet/src/CameraPoseVisualization.h",
+		"/home/bbgf/catkin_ws/src/depthnet/src/CameraPoseVisualization.cpp",
+		"/home/bbgf/catkin_ws/src/InfiniTAM_ros/libs/ITMLib/Utils/ITMLibSettings.h",
+		"/home/bbgf/catkin_ws/src/InfiniTAM_ros/libs/ITMLib/Utils/ITMLibSettings.cpp",
+		"/home/bbgf/catkin_ws/src/InfiniTAM_ros/libs/ITMLib/Core/ITMBasicEngine.tpp",
+		"/home/bbgf/catkin_ws/src/data_set/icl_nuim_wapper/launch/fusion.launch",
+		"/home/bbgf/catkin_ws/src/data_set/icl_nuim_wapper/src/main.cpp",
+		"/home/bbgf/catkin_ws/src/data_set/icl_nuim_wapper/CMakeLists.txt",
+		"/home/bbgf/catkin_ws/src/planner/pcd_trajectory/src/path_finder.cpp",
+		"/home/bbgf/catkin_ws/src/InfiniTAM_ros/libs/ITMLib/Core/ITMBasicEngine.h",
+		"/home/bbgf/catkin_ws/src/InfiniTAM_ros/libs/ITMLib/Objects/Meshing/ITMMesh.h",
+		"/home/bbgf/catkin_ws/src/gpu_convex_planner/src/gpu_convex_demo.cpp",
+		"/home/bbgf/catkin_ws/src/InfiniTAM_ros/libs/ITMLib/Objects/Scene/ITMVoxelBlockHash.h",
+		"/home/bbgf/catkin_ws/src/InfiniTAM_ros/libs/ITMLib/Objects/Scene/ITMLocalVBA.h",
+		"/home/bbgf/catkin_ws/src/djiros/CMakeLists.txt",
+		"/home/bbgf/catkin_ws/src/djiros/src/djiros/djifox_node.cpp",
+		"/home/bbgf/catkin_ws/src/teach_repeat_planer/src/tr_node.cpp",
+		"/home/bbgf/catkin_ws/src/djiros/src/djiros/djiros_node.cpp",
+		"/home/bbgf/catkin_ws/src/djiros/src/djiros/DjiRos.cpp",
 		"/home/bbgf/catkin_ws/src/InfiniTAM/cmake/Flags.cmake",
 		"/home/bbgf/catkin_ws/src/InfiniTAM/cmake/UseCUDA.cmake",
-		"/home/bbgf/catkin_ws/src/gpu_convex_planner/CMakeLists.txt",
 		"/home/bbgf/catkin_ws/src/InfiniTAM/package.xml",
 		"/home/bbgf/catkin_ws/src/InfiniTAM/CMakeLists.txt",
 		"/home/bbgf/catkin_ws/src/InfiniTAM/src/InfiniTAMCheck.cu",
@@ -630,14 +756,12 @@
 		"/home/bbgf/catkin_ws/src/InfiniTAM/launch/depth_input_demo.launch",
 		"/home/bbgf/catkin_ws/src/time_optimizer/time_optimizer/src/demo.cpp",
 		"/home/bbgf/catkin_ws/src/InfiniTAM/calib.txt",
-		"/home/bbgf/catkin_ws/src/open_quadtree_mapping/launch/example.launch",
 		"/home/bbgf/catkin_ws/src/InfiniTAM/src/RosWrappedMain.cpp",
 		"/home/bbgf/catkin_ws/src/InfiniTAM/cmake/SetCUDAAppTarget.cmake",
 		"/home/bbgf/catkin_ws/src/gpu_convex_planner/src/trajectory_generator_osqp.cpp",
 		"/home/bbgf/catkin_ws/src/gpu_convex_planner/include/planning/trajectory_generator_osqp.h",
 		"/home/bbgf/catkin_ws/src/gpu_convex_planner/src/trajectory_generator_ooqp.cpp",
 		"/home/bbgf/catkin_ws/src/gpu_convex_planner/include/planning/trajectory_generator_ooqp.h",
-		"/home/bbgf/catkin_ws/src/gpu_convex_planner/src/gpu_convex_demo.cpp",
 		"/home/bbgf/osqp/CMakeLists.txt",
 		"/home/bbgf/osqp-eigen/src/Solver.cpp",
 		"/home/bbgf/osqp-eigen/src/Settings.cpp",
@@ -666,7 +790,6 @@
 		"/home/bbgf/catkin_ws/src/gpu_convex_planner/package.xml",
 		"/home/bbgf/catkin_ws/src/gpu_convex_planner/include/cluster_server.cuh",
 		"/home/bbgf/catkin_ws/src/gpu_convex_planner/include/cluster_engine.cuh",
-		"/home/bbgf/catkin_ws/src/teach_repeat_planer/src/tr_node.cpp",
 		"/home/bbgf/catkin_ws/src/gpu_convex_planner/src/cluster_engine.cuh",
 		"/home/bbgf/catkin_ws/src/gpu_convex_planner/include/convex_cluster.cuh",
 		"/home/bbgf/catkin_ws/src/gpu_convex_planner/src/convex_cluster.cu",
@@ -688,76 +811,22 @@
 		"/home/bbgf/catkin_ws/src/open_quadtree_mapping/src/publisher.cpp",
 		"/home/bbgf/InfiniTAM/InfiniTAM/build/Makefile",
 		"/home/bbgf/catkin_ws/src/infinitam/InfiniTAM/Engine/CMakeLists.txt",
-		"/home/bbgf/catkin_ws/src/infinitam/InfiniTAM/package.xml",
-		"/home/bbgf/catkin_ws/src/infinitam/InfiniTAM/CMakeLists.txt",
-		"/home/bbgf/catkin_ws/src/infinitam/InfiniTAM/infinitam_ros_node.cpp",
-		"/home/bbgf/catkin_ws/src/open_quadtree_mapping/src/main_ros.cpp",
-		"/home/bbgf/InfiniTAM/InfiniTAM/CMakeLists.txt",
-		"/home/bbgf/InfiniTAM/InfiniTAM/build/Apps/Makefile",
-		"/home/bbgf/catkin_ws/src/gpu_convex_planner/include/hybrid_a_star.h",
-		"/home/bbgf/catkin_ws/src/gpu_convex_planner/include/trajectory_generator_fast.h",
-		"/home/bbgf/catkin_ws/src/gpu_convex_planner/src/trajectory_generator_fast.cpp",
-		"/home/bbgf/catkin_ws/src/gpu_fusion/src/DepthFusion.cu",
-		"/home/bbgf/catkin_ws/src/gpu_fusion/src/GpuFusion.cu",
-		"/home/bbgf/catkin_ws/src/gpu_fusion/src/ros_node.cpp",
-		"/home/bbgf/catkin_ws/src/gpu_fusion/src/se3.cuh",
-		"/home/bbgf/catkin_ws/src/gpu_fusion/src/VoxelData.cuh",
-		"/home/bbgf/catkin_ws/src/plan_utils/pose_utils/include/pose_utils.h",
-		"/home/bbgf/catkin_ws/src/plan_utils/pose_utils/src/pose_utils.cpp",
-		"/home/bbgf/catkin_ws/data/auto_test",
-		"/home/bbgf/catkin_ws/src/fast_flight_planer/src/traj_server.cpp",
-		"/home/bbgf/catkin_ws/src/fast_flight_planer/src/fast_flight_node.cpp",
-		"/home/bbgf/catkin_ws/src/fast_flight_planer/src/trajectory_generator_fast.cpp",
-		"/home/bbgf/Downloads/GandB-master/src/hybrid_astar.cpp",
-		"/home/bbgf/catkin_ws/src/gpu_convex_planner/src/sample.c",
-		"/home/bbgf/catkin_ws/src/gpu_convex_planner/include/quickhull/QuickHull.hpp",
-		"/home/bbgf/Downloads/glpk-4.65/examples/sample.c",
-		"/home/bbgf/catkin_ws/src/planner/pcd_trajectory/CMakeLists.txt",
-		"/home/bbgf/Downloads/glpk-4.65/examples/glpsol.c",
-		"/home/bbgf/Downloads/glpk-4.65/examples/mplsamp1.c",
-		"/home/bbgf/Downloads/glpk-4.65/examples/oldapi/lpx.c",
-		"/home/bbgf/Downloads/glpk-4.65/examples/iptsamp.c",
-		"/home/bbgf/catkin_ws/src/gpu_convex_planner/src/data_type.h",
-		"/home/bbgf/catkin_ws/src/parallel_corridor_planner/include/data_type.h",
-		"/home/bbgf/catkin_ws/src/parallel_corridor_planner/src/Polyhedron.cpp",
-		"/home/bbgf/catkin_ws/src/parallel_corridor_planner/src/Polyhedron.h",
-		"/home/bbgf/Downloads/GandB-master/src/test_astar.cpp",
-		"/home/bbgf/catkin_ws/src/parallel_corridor_planner/src/hybrid_a_star.h",
-		"/home/bbgf/catkin_ws/src/parallel_corridor_planner/src/hybrid_a_star.cpp",
-		"/home/bbgf/catkin_ws/src/parallel_corridor_planner/src/data_type.h",
-		"/home/bbgf/catkin_ws/src/hybrid_astar/src/algorithm.cpp",
-		"/home/bbgf/catkin_ws/src/parallel_corridor_planner/src/trajectory_generator_fast.cpp",
-		"/home/bbgf/catkin_ws/src/parallel_corridor_planner/src/trajectory_generator_fast.h",
-		"/home/bbgf/catkin_ws/src/parallel_corridor_planner/launch/map.launch",
-		"/home/bbgf/catkin_ws/src/parallel_corridor_planner/CMakeLists.txt",
-		"/home/bbgf/catkin_ws/src/parallel_corridor_planner/launch/gpu_convex.launch",
-		"/home/bbgf/catkin_ws/src/parallel_corridor_planner/src/gpu_convex_demo.cpp",
-		"/home/bbgf/catkin_ws/src/parallel_corridor_planner/src/empty_loop.cpp",
-		"/home/bbgf/catkin_ws/src/planner/pcd_trajectory/src/pcd_trajectory_node.cpp",
-		"/home/bbgf/Downloads/narrow_gap/src/tr_node.cpp",
-		"/home/bbgf/catkin_ws/src/parallel_corridor_planner/include/convex_cluster.cuh",
-		"/home/bbgf/catkin_ws/src/parallel_corridor_planner/src/convex_cluster.cu",
-		"/home/bbgf/Downloads/hybrid_astar.h",
-		"/home/bbgf/Downloads/hybrid_astar.cpp",
-		"/home/bbgf/Downloads/narrow_gap/src/trajectory_generator_fast.cpp",
-		"/home/bbgf/Downloads/narrow_gap/CMakeLists.txt",
-		"/home/bbgf/Downloads/narrow_gap/include/data_type.h",
-		"/home/bbgf/catkin_ws/src/fast_flight_planer/launch/fast_flight.launch",
-		"/home/bbgf/Downloads/teach_repeat_planner-bad0565a3c91bd9c0e0f68773bc2f53bb0bc5319/include/data_type.h",
-		"/home/bbgf/catkin_ws/src/teach_repeat_planer/src/trajectory_generator_fast.cpp",
-		"/home/bbgf/catkin_ws/src/fast_flight_planer/src/hybrid_a_star.cpp",
-		"/home/bbgf/catkin_ws/src/parallel_corridor_planner/src/utils.hpp",
-		"/home/bbgf/catkin_ws/src/parallel_corridor_planner/src/tsdf_gpu_node.cu"
+		"/home/bbgf/catkin_ws/src/infinitam/InfiniTAM/package.xml"
 	],
 	"find":
 	{
-		"height": 41.0
+		"height": 28.0
 	},
 	"find_in_files":
 	{
 		"height": 123.0,
 		"where_history":
 		[
+			"/home/bbgf/catkin_ws/src/depthnet",
+			"/home/bbgf/catkin_ws/src/depthnet/src",
+			"/home/bbgf/catkin_ws/src/InfiniTAM_ros",
+			"/home/bbgf/catkin_ws/src/InfiniTAM_ros/src",
+			"<current file>,<open files>",
 			"",
 			"<current file>,<open files>",
 			"<current file>",
@@ -766,9 +835,116 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": true,
+		"case_sensitive": false,
 		"find_history":
 		[
+			"Factorial",
+			"readRGBDCalib",
+			"calibFile",
+			"gpu_convex_demo",
+			"depth",
+			"imageQueue",
+			"_rotation",
+			"rectify",
+			"poseStampedCallback",
+			"scale_",
+			"publish_pointcloud",
+			"PyObject_CallMethod",
+			"get_income_depth",
+			"aaa",
+			"get_income_depth",
+			"loading model done",
+			"catkin_ws",
+			"PyImport_ImportModule",
+			"py_module",
+			"py_model",
+			"image_input",
+			"msg_callback",
+			"exact_image_pose_policy",
+			"frame_manager",
+			"msg_callback",
+			"image_input",
+			"msg_callback",
+			"image_encodings",
+			"toImageMsg",
+			"cv_bridge",
+			"ImageData",
+			"income_data",
+			"toImageMsg",
+			"cv_bridge",
+			"publish_reference",
+			"cv_bridge",
+			"img_color",
+			"color_image",
+			"matFromImage",
+			"cv_img_ptr",
+			"toCvShare",
+			"cv_bridge",
+			"transport_util",
+			"publish_reference",
+			"cv_bridge",
+			"OpenCV_INCLUDE_DIRS",
+			"OpenCV_LINK_DIRS",
+			"exception",
+			"cv_bridge",
+			"OpenCV_LIBS",
+			"OpenCV_LIBRARIES",
+			"OpenCV_LIBS",
+			"throw_no_cuda",
+			"codec",
+			"cudacodec",
+			"WITH_NVCUVID",
+			"WITH_CUDA",
+			"with_cuda",
+			"NVCUVID",
+			"WITH_CUDA",
+			"cudev",
+			"HAVE_OPENCV_CUDEV",
+			"WITH_CUDA",
+			"last_pose",
+			"input_pose",
+			"input_frame",
+			"last_pose",
+			"input_frame",
+			"last_pose",
+			"input_pose",
+			"input_frame",
+			"WITH_CUDA",
+			"cuda",
+			"CUDA",
+			"codec",
+			"cuda",
+			"cudacodec",
+			"WITH_CUDA",
+			"_rotation",
+			"visualizeVoxel",
+			"visualize_voxel",
+			"visualize_mesh",
+			"getAllVoxelsInThreshold",
+			"vp",
+			"getAllVoxelsInThreshold",
+			"visualizeMesh",
+			"world",
+			"read_poselist",
+			"file_dir",
+			"sceneParams",
+			"maxW",
+			"ITMLibSettings",
+			"detach",
+			"getTriangleMeshPoints",
+			"visualizeMesh",
+			"visualize_mesh",
+			"getTriangleMeshPoints",
+			"visualizeMesh",
+			"visualize_mesh",
+			"save",
+			"getAllVoxelsInThreshold",
+			"visualize_mesh",
+			"visualizeMesh",
+			"save",
+			"Vector2Point",
+			"_pub_mesh_vis",
+			"_subDepthImage",
 			"_mu",
 			"save",
 			"string",
@@ -789,114 +965,7 @@
 			"set",
 			"frame",
 			"tt",
-			"error_code_1",
-			"_trajectoryGeneratorOSQP",
-			"pardiso",
-			"m_settings",
-			"setLinearSystemSolver",
-			"InfiniTAMCheck_device",
-			"QPSolution",
-			"_minimize_order",
-			"_trajectoryGeneratorOOQP",
-			"TrajectoryGeneratorOOQP",
-			"trajectory_generator_osqp",
-			"A",
-			"castMPCToQPHessian",
-			"hessian",
-			"A",
-			"hessian",
-			"setHessianMatrix",
-			"A",
-			"MQM",
-			"MQM_u",
-			"row_idx",
-			"high_order_con_num",
-			"vel_con_num",
-			"acc_con_num",
-			"high_order_con_num",
-			"con_ie_bd",
-			"ENFORCE_VEL",
-			"min_order_u",
-			"minimize_order",
-			"BezierPloyCoeffGenerationFast",
-			"_trajectoryGeneratorFast",
-			"TrajectoryGeneratorFast",
-			"infiniTAM",
-			"ZERO_EPISLON",
-			"MQM_u",
-			"rcvWa",
-			"paraResultCheck",
-			"index_med",
-			"itr_cluster_max",
-			"gpuPlanning",
-			"convexDebuging",
-			"funnelSetAll",
-			"funnel_data",
-			"setFunnelStates",
-			"time_1",
-			"time_2",
-			"time_1_cube_gpu",
-			"time_2_cube_cpu",
-			"time_1_cube_cpu",
-			"time_2_cube_cpu",
-			"time_2_cube",
-			"time_1_cube",
-			"time_2_cube_cpu",
-			"time_1_cube_cpu",
-			"uint8_t",
-			"can_x_index",
-			"polytopeCluster_cpu",
-			"serialConvexTest",
-			"_max_z_id",
-			"_max_yz_id",
-			"index_1_med",
-			"index_med",
-			"k",
-			"ray_trace_cnt",
-			"cnt_inside",
-			"serialConvexTest",
-			"inside_data",
-			"paraConvexCluster",
-			"tmp_set_z",
-			"is_conti_inflate",
-			"checkCuda",
-			"ros",
-			"ROS",
-			"time_upload_cube",
-			"cluster_size",
-			"time_download",
-			"time_upload",
-			"time_cuda_poly",
-			"time_cuda",
-			"time_1_cube",
-			"time_2_cube",
-			"polytopeCluster_gpu",
-			"USE_GPU_STAGE_2",
-			"cluster_grid_num",
-			"polytopeCluster_gpu",
-			"init_cluster_grid_num",
-			"cluster_grid_num",
-			"setVertexInitIndex",
-			"map_yz_size",
-			"map_z_size",
-			"map_yz_size",
-			"_max_yz_id",
-			"map_yz_size",
-			"init_cluster_grid_num",
-			"polytopeCluster_gpu",
-			"active_grid_num",
-			"polytopeCluster_gpu",
-			"time_cuda",
-			"polytopeCluster_gpu",
-			"time_ite",
-			"time_1",
-			"polytopeCluster_gpu",
-			"testConvex",
-			"time_step",
-			"t_delta",
-			"time_step",
-			"_t_delta",
-			"time_step"
+			"error_code_1"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1019,20 +1088,228 @@
 		"reverse": false,
 		"show_context": true,
 		"use_buffer2": true,
-		"whole_word": true,
+		"whole_word": false,
 		"wrap": true
 	},
 	"groups":
 	[
 		{
+			"selected": 3,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/home/bbgf/catkin_ws/src/gpu_convex_planner/src/gpu_convex_demo.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 68899,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								134,
+								134
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 57.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/bbgf/catkin_ws/src/gpu_convex_planner/include/planning/hybrid_a_star.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7312,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								106,
+								106
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/bbgf/catkin_ws/src/gpu_convex_planner/src/cluster_engine_cpu.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3996,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								435,
+								435
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/RosWrappedMain.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12489,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9906,
+								9906
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4066.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "launch/depth_input_demo.launch",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 723,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								565,
+								565
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "calib.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 325,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7,
+								7
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CMake/CMake.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/home/bbgf/catkin_ws/src/sgbm_ros/src/sgbm_ros.cu",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10009,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8244,
+								8244
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4862.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 29.0
+		"height": 28.0
 	},
 	"input":
 	{
@@ -1065,11 +1342,15 @@
 	{
 		"height": 0.0
 	},
+	"output.unsaved_changes":
+	{
+		"height": 150.0
+	},
 	"pinned_build_system": "",
 	"project": "infiniTAM_ros.sublime-project",
 	"replace":
 	{
-		"height": 74.0
+		"height": 52.0
 	},
 	"save_all_on_build": true,
 	"select_file":

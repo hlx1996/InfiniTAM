@@ -66,6 +66,8 @@ std::vector<Vector3f> * getAllVoxelsInThreshold(ITMLib::ITMMainEngine *mainEngin
                     }
                 }
     }
+    scene->localVBA.FreeVoxelBlocks_CPU();
+    scene->index.FreeEntries_CPU();
     return vp;
 }
 
@@ -213,7 +215,7 @@ void imageCallback(const sensor_msgs::Image::ConstPtr &msg) {
             newPos = true;
         }
         if (transformQueue.empty() || std::get<0>(transformQueue.front()) <= _imageTime + ros::Duration(1e-3)) {
-            continue;
+            break;
         }
         if (!newPos) {
             imageQueue.pop();
@@ -222,7 +224,6 @@ void imageCallback(const sensor_msgs::Image::ConstPtr &msg) {
         std::cout << "Alignment" << std::endl;
         std::cout << "Pose timestamp\t" << _poseTime << "\t" << std::endl;
         std::cout << "Image timestamp\t" << _imageTime << "\t" << std::endl;
-
 
         _cv_depth_image = cv_bridge::toCvCopy(imageQueue.front(), imageQueue.front()->encoding);
         if (imageQueue.front()->encoding == sensor_msgs::image_encodings::TYPE_32FC1) 
@@ -298,14 +299,14 @@ int main(int argc, char **argv)
     nh.param( "fusion_param/viewFrustum_min", _viewFrustum_min, 0.01 );
     nh.param( "fusion_param/viewFrustum_max", _viewFrustum_max, 5.0  );
 
-    /*_subDepthImage = nh.subscribe("/open_quadtree_mapping/depth", 1, imageCallback);
-    _subPose       = nh.subscribe("/vins_estimator/camera_pose" ,   1, poseStampedCallback);*/
+    _subDepthImage = nh.subscribe("depth",   1, imageCallback);
+    _subPose       = nh.subscribe("pose" ,   1, poseStampedCallback);
 
     /*_subDepthImage = nh.subscribe("/icl_nuim_wapper/gt_depth", 1, imageCallback);
     _subPose       = nh.subscribe("/icl_nuim_wapper/cur_pose" , 1, poseStampedCallback);*/
     
-    _subDepthImage = nh.subscribe("/sgbm_ros_node/depth_image",   10, imageCallback);
-    _subPose       = nh.subscribe("/vins_estimator/camera_pose",  10, poseStampedCallback);
+    /*_subDepthImage = nh.subscribe("/sgbm_ros_node/depth_image",   10, imageCallback);
+    _subPose       = nh.subscribe("/vins_estimator/camera_pose",  10, poseStampedCallback);*/
 
     _pub_mesh_vis  = nh.advertise<visualization_msgs::Marker>("infinitam_mesh_vis", 1);
 

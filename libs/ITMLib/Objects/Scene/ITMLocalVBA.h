@@ -34,6 +34,10 @@ namespace ITMLib
             return tmp;
         }
 
+        void FreeVoxelBlocks_CPU(void) {
+			delete voxelBlocks_cpu;
+		}
+
 #ifdef COMPILE_WITH_METAL
 		const void* GetVoxelBlocks_MB() const { return voxelBlocks->GetMetalBuffer(); }
 		const void* GetAllocationList_MB(void) const { return allocationList->GetMetalBuffer(); }

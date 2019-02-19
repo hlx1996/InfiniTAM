@@ -115,6 +115,10 @@ namespace ITMLib
 			return tmp;
 		}
 
+		void FreeEntries_CPU(void) {
+			delete hashEntries_cpu;
+		}
+
 		/** Get the list that identifies which entries of the
 		overflow list are allocated. This is used if too
 		many hash collisions caused the buckets to overflow.

@@ -1,11 +1,18 @@
 <launch>
 
   <node pkg = "infinitam_ros" type="infinitam_ros_node" name="infinitam_ros_node" output="screen" required = "true">
-      <param name = "ros_node/pkg_path" value="$(find infinitam_ros)" />
-      <param name = "fusion_param/mu"              value="0.5" />
-      <param name = "fusion_param/voxelSize"       value="0.1" />
-      <param name = "fusion_param/viewFrustum_min" value="0.5" />
-      <param name = "fusion_param/viewFrustum_max" value="5.0" />
+	<param name = "ros_node/pkg_path" value="$(find infinitam_ros)" />
+	<param name = "fusion_param/mu"              value="0.5" />
+	<param name = "fusion_param/voxelSize"       value="0.1" />
+	<param name = "fusion_param/viewFrustum_min" value="0.5" />
+	<param name = "fusion_param/viewFrustum_max" value="5.0" />
+
+    <remap from="~depth" to="/camera/depth/image_rect_raw" 	      />
+    <remap from="~pose"  to="/vins_estimator/camera_pose" />
+
+    <!-- <remap from="~depth" to="/sgbm_ros_node/depth_image"  />
+    <remap from="~pose"  to="/vins_estimator/camera_pose" /> -->
+
   </node>
 
 </launch>
