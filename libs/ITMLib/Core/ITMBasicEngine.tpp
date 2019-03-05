@@ -123,6 +123,20 @@ std::vector<Vector3f> ITMBasicEngine<TVoxel,TIndex>::getTriangleMeshPoints()
 
 }
 template <typename TVoxel, typename TIndex>
+std::vector<Vector3f> *ITMBasicEngine<TVoxel,TIndex>::getTriangleMeshPoints()
+{
+	if (meshingEngine == NULL) return new std::vector<Vector3f>();
+
+	ITMMesh *mesh = new ITMMesh(settings->GetMemoryType());
+
+	meshingEngine->MeshScene(mesh, scene);
+    std::vector<Vector3f> *tmp = mesh->getTriangleMeshPoints();
+    delete mesh;
+	return tmp;
+
+}
+
+template <typename TVoxel, typename TIndex>
 void ITMBasicEngine<TVoxel, TIndex>::SaveToFile()
 {
 	// throws error if any of the saves fail

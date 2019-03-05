@@ -5,29 +5,29 @@
 #include "../../../ORUtils/MemoryBlock.h"
 #include "../../../ORUtils/MemoryBlockPersister.h"
 
-namespace ITMLib {
-    /** \brief
-    Stores the actual voxel content that is referred to by a
-    ITMLib::ITMHashTable.
-    */
-    template<class TVoxel>
-    class ITMLocalVBA {
-    private:
-        ORUtils::MemoryBlock<TVoxel> *voxelBlocks;
-        ORUtils::MemoryBlock<int> *allocationList;
-        // temporary existing
-        ORUtils::MemoryBlock<TVoxel> *voxelBlocks_cpu;
+namespace ITMLib
+{
+	/** \brief
+	Stores the actual voxel content that is referred to by a
+	ITMLib::ITMHashTable.
+	*/
+	template<class TVoxel>
+	class ITMLocalVBA
+	{
+	private:
+		ORUtils::MemoryBlock<TVoxel> *voxelBlocks;
+		ORUtils::MemoryBlock<int> *allocationList;
+		ORUtils::MemoryBlock<TVoxel> *voxelBlocks_cpu;
 
-        MemoryDeviceType memoryType;
+		MemoryDeviceType memoryType;
 
-    public:
-        inline TVoxel *GetVoxelBlocks(void) { return voxelBlocks->GetData(memoryType); }
+	public:
+		inline TVoxel *GetVoxelBlocks(void) { return voxelBlocks->GetData(memoryType); }
+		inline const TVoxel *GetVoxelBlocks(void) const { return voxelBlocks->GetData(memoryType); }
+		int *GetAllocationList(void) { return allocationList->GetData(memoryType); }
 
-        inline const TVoxel *GetVoxelBlocks(void) const { return voxelBlocks->GetData(memoryType); }
 
-        int *GetAllocationList(void) { return allocationList->GetData(memoryType); }
-
-        TVoxel *GetVoxelBlocks_CPU(void) {
+		TVoxel *GetVoxelBlocks_CPU(void) {
             voxelBlocks_cpu = new ORUtils::MemoryBlock<TVoxel>(voxelBlocks->dataSize, MEMORYDEVICE_CPU);
             voxelBlocks_cpu->SetFrom(voxelBlocks, ORUtils::MemoryBlock<TVoxel>::CUDA_TO_CPU);
             TVoxel *tmp = voxelBlocks_cpu->GetData(MEMORYDEVICE_CPU);
@@ -35,6 +35,9 @@ namespace ITMLib {
             return tmp;
         }
 
+        void FreeVoxelBlocks_CPU(void) {
+			delete voxelBlocks_cpu;
+		}
 
 #ifdef COMPILE_WITH_METAL
         const void* GetVoxelBlocks_MB() const { return voxelBlocks->GetMetalBuffer(); }

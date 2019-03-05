@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package>
-  <name>infinitam</name>
+  <name>infinitam_ros</name>
   <version>0.0.1</version>
-  <description> InfiniTAM </description>
+  <description> InfiniTAM for ROS </description>
   <maintainer email="hlx1996@gmail.com">hlx1996</maintainer>
   <license>MIT</license>
 

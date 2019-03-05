@@ -102,4 +102,3 @@ float InfiniTAMCheck(ITMLib::ITMMainEngine *mainEngine, float x, float y, float 
     if (answer_host > 0.9999 || answer_host < -0.9999) return 100;
     return answer_host * scene->sceneParams->mu;
 }
-
