@@ -26,6 +26,7 @@ namespace ITMLib
 		inline const TVoxel *GetVoxelBlocks(void) const { return voxelBlocks->GetData(memoryType); }
 		int *GetAllocationList(void) { return allocationList->GetData(memoryType); }
 
+
 		TVoxel *GetVoxelBlocks_CPU(void) {
             voxelBlocks_cpu = new ORUtils::MemoryBlock<TVoxel>(voxelBlocks->dataSize, MEMORYDEVICE_CPU);
             voxelBlocks_cpu->SetFrom(voxelBlocks, ORUtils::MemoryBlock<TVoxel>::CUDA_TO_CPU);
@@ -39,61 +40,58 @@ namespace ITMLib
 		}
 
 #ifdef COMPILE_WITH_METAL
-		const void* GetVoxelBlocks_MB() const { return voxelBlocks->GetMetalBuffer(); }
-		const void* GetAllocationList_MB(void) const { return allocationList->GetMetalBuffer(); }
+        const void* GetVoxelBlocks_MB() const { return voxelBlocks->GetMetalBuffer(); }
+        const void* GetAllocationList_MB(void) const { return allocationList->GetMetalBuffer(); }
 #endif
-		int lastFreeBlockId;
+        int lastFreeBlockId;
 
-		int allocatedSize;
+        int allocatedSize;
 
-		void SaveToDirectory(const std::string &outputDirectory) const
-		{
-			std::string VBFileName = outputDirectory + "voxel.dat";
-			std::string ALFileName = outputDirectory + "alloc.dat";
-			std::string AllocSizeFileName = outputDirectory + "vba.txt";
+        void SaveToDirectory(const std::string &outputDirectory) const {
+            std::string VBFileName = outputDirectory + "voxel.dat";
+            std::string ALFileName = outputDirectory + "alloc.dat";
+            std::string AllocSizeFileName = outputDirectory + "vba.txt";
 
-			ORUtils::MemoryBlockPersister::SaveMemoryBlock(VBFileName, *voxelBlocks, memoryType);
-			ORUtils::MemoryBlockPersister::SaveMemoryBlock(ALFileName, *allocationList, memoryType);
+            ORUtils::MemoryBlockPersister::SaveMemoryBlock(VBFileName, *voxelBlocks, memoryType);
+            ORUtils::MemoryBlockPersister::SaveMemoryBlock(ALFileName, *allocationList, memoryType);
 
-			std::ofstream ofs(AllocSizeFileName.c_str());
-			if (!ofs) throw std::runtime_error("Could not open " + AllocSizeFileName + " for writing");
+            std::ofstream ofs(AllocSizeFileName.c_str());
+            if (!ofs) throw std::runtime_error("Could not open " + AllocSizeFileName + " for writing");
 
-			ofs << lastFreeBlockId << ' ' << allocatedSize;
-		}
+            ofs << lastFreeBlockId << ' ' << allocatedSize;
+        }
 
-		void LoadFromDirectory(const std::string &inputDirectory)
-		{
-			std::string VBFileName = inputDirectory + "voxel.dat";
-			std::string ALFileName = inputDirectory + "alloc.dat";
-			std::string AllocSizeFileName = inputDirectory + "vba.txt";
+        void LoadFromDirectory(const std::string &inputDirectory) {
+            std::string VBFileName = inputDirectory + "voxel.dat";
+            std::string ALFileName = inputDirectory + "alloc.dat";
+            std::string AllocSizeFileName = inputDirectory + "vba.txt";
 
-			ORUtils::MemoryBlockPersister::LoadMemoryBlock(VBFileName, *voxelBlocks, memoryType);
-			ORUtils::MemoryBlockPersister::LoadMemoryBlock(ALFileName, *allocationList, memoryType);
+            ORUtils::MemoryBlockPersister::LoadMemoryBlock(VBFileName, *voxelBlocks, memoryType);
+            ORUtils::MemoryBlockPersister::LoadMemoryBlock(ALFileName, *allocationList, memoryType);
 
-			std::ifstream ifs(AllocSizeFileName.c_str());
-			if (!ifs) throw std::runtime_error("Could not open " + AllocSizeFileName + " for reading");
+            std::ifstream ifs(AllocSizeFileName.c_str());
+            if (!ifs) throw std::runtime_error("Could not open " + AllocSizeFileName + " for reading");
 
-			ifs >> lastFreeBlockId >> allocatedSize;
-		}
+            ifs >> lastFreeBlockId >> allocatedSize;
+        }
 
-		ITMLocalVBA(MemoryDeviceType memoryType, int noBlocks, int blockSize)
-		{
-			this->memoryType = memoryType;
+        ITMLocalVBA(MemoryDeviceType memoryType, int noBlocks, int blockSize) {
+            this->memoryType = memoryType;
 
-			allocatedSize = noBlocks * blockSize;
+            allocatedSize = noBlocks * blockSize;
 
-			voxelBlocks = new ORUtils::MemoryBlock<TVoxel>(allocatedSize, memoryType);
-			allocationList = new ORUtils::MemoryBlock<int>(noBlocks, memoryType);
-		}
+            voxelBlocks = new ORUtils::MemoryBlock<TVoxel>(allocatedSize, memoryType);
+            allocationList = new ORUtils::MemoryBlock<int>(noBlocks, memoryType);
+        }
 
-		~ITMLocalVBA(void)
-		{
-			delete voxelBlocks;
-			delete allocationList;
-		}
+        ~ITMLocalVBA(void) {
+            delete voxelBlocks;
+            delete allocationList;
+        }
 
-		// Suppress the default copy constructor and assignment operator
-		ITMLocalVBA(const ITMLocalVBA&);
-		ITMLocalVBA& operator=(const ITMLocalVBA&);
-	};
+        // Suppress the default copy constructor and assignment operator
+        ITMLocalVBA(const ITMLocalVBA &);
+
+        ITMLocalVBA &operator=(const ITMLocalVBA &);
+    };
 }

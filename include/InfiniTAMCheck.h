@@ -7,7 +7,10 @@
 
 #include "../libs/ITMLib/Core/ITMMainEngine.h"
 #include "../libs/ITMLib/ITMLibDefines.h"
+#include <vector>
+
 float InfiniTAMCheck(ITMLib::ITMMainEngine *mainEngine, float x, float y, float z, float requireSize);
+
 
 
 #endif //INFINITAM_INFINITAMCHECK_H
