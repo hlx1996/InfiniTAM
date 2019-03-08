@@ -82,7 +82,6 @@ void save(ITMMainEngine * mainEngine) {
     std::cout << ss.str() << std::endl;
 
     mainEngine->SaveSceneToMesh(ss.str().c_str());
-
 }
 
 void visualize_mesh(ITMMainEngine * mainEngine) {
@@ -182,42 +181,6 @@ void visualizeVoxel(const std::vector<Vector3f> * voxeles)
     _pub_mesh_vis.publish(mesh_ros);
 }
 
-template<class TVoxel=ITMVoxel>
-std::vector<Vector3f> getAllVoxelsInThreshold(ITMLib::ITMMainEngine *mainEngine, float threshold = 0.5) {
-    ITMLib::ITMScene<TVoxel, ITMVoxelIndex> *scene
-            = dynamic_cast<ITMLib::ITMBasicEngine<ITMVoxel_s, ITMVoxelIndex> *>(mainEngine)->getScene();
-    TVoxel *localVBA = scene->localVBA.GetVoxelBlocks_CPU();
-    const ITMHashEntry *hashTable = scene->index.GetEntries_CPU();
-    std::vector<Vector3f> vp;
-    int noTotalEntries = scene->index.noTotalEntries;
-
-    for (int entryId = 0; entryId < noTotalEntries; entryId++) {
-        Vector3i globalPos;
-        const ITMHashEntry &currentHashEntry = hashTable[entryId];
-
-        if (currentHashEntry.ptr < 0) continue;
-
-        globalPos = currentHashEntry.pos.toInt() * SDF_BLOCK_SIZE;
-        TVoxel *localVoxelBlock = &(localVBA[currentHashEntry.ptr * (SDF_BLOCK_SIZE3)]);
-        for (int z = 0; z < SDF_BLOCK_SIZE; z++)
-            for (int y = 0; y < SDF_BLOCK_SIZE; y++)
-                for (int x = 0; x < SDF_BLOCK_SIZE; x++) {
-                    float sdf = TVoxel::valueToFloat(localVoxelBlock[x + y * SDF_BLOCK_SIZE +
-                                                                     z * SDF_BLOCK_SIZE * SDF_BLOCK_SIZE].sdf);
-                    if (sdf > -threshold && sdf < threshold) {
-                        Vector3f tmp = ((globalPos + Vector3i(x, y, z)).toFloat()
-                                        + Vector3f(0.5, 0.5, 0.5)) * scene->sceneParams->voxelSize;
-                        vp.push_back(tmp);
-                    }
-                }
-    }
-    return vp;
-}
-
-std::vector<Vector3f> getTriangleMeshPoints() {
-    return dynamic_cast<ITMLib::ITMBasicEngine<ITMVoxel_s, ITMVoxelIndex> *>(mainEngine)->getTriangleMeshPoints();
-}
-
 void imageCallback(const sensor_msgs::Image::ConstPtr &msg) {
     if (_depth_img_cnt ++ < 25) return;
     if (_depth_img_cnt % 30 == 0) 
@@ -293,17 +256,17 @@ void imageCallback(const sensor_msgs::Image::ConstPtr &msg) {
     }
 }
 
-//void poseStampedCallback(const geometry_msgs::PoseStamped::ConstPtr &msg) {
-void poseStampedCallback(const nav_msgs::Odometry::ConstPtr &msg) {
+void poseStampedCallback(const geometry_msgs::PoseStamped::ConstPtr &msg) {
+//void poseStampedCallback(const nav_msgs::Odometry::ConstPtr &msg) {
     //std::cout << "poseStamp\t" << msg->header.stamp << std::endl;
-    Eigen::Vector3d _position    = Eigen::Vector3d(msg->pose.pose.position.x,
-                                   msg->pose.pose.position.y,
-                                   msg->pose.pose.position.z);
+    Eigen::Vector3d _position    = Eigen::Vector3d(msg->pose.position.x,
+                                   msg->pose.position.y,
+                                   msg->pose.position.z);
 
-    Eigen::Quaterniond _orientation = Eigen::Quaterniond(msg->pose.pose.orientation.w,
-                                      msg->pose.pose.orientation.x,
-                                      msg->pose.pose.orientation.y,
-                                      msg->pose.pose.orientation.z);
+    Eigen::Quaterniond _orientation = Eigen::Quaterniond(msg->pose.orientation.w,
+                                      msg->pose.orientation.x,
+                                      msg->pose.orientation.y,
+                                      msg->pose.orientation.z);
     
 
     transformQueue.push(std::make_tuple(msg->header.stamp, _position, _orientation));
@@ -313,7 +276,6 @@ void rgbcallback(const sensor_msgs::Image::ConstPtr &msg) {
     //std::cout << "poseStamp\t" << msg->header.stamp << std::endl;
     _cv_rgb_image = cv_bridge::toCvCopy(msg, msg->encoding);
     cv::cvtColor(_cv_rgb_image->image, _cv_rgb_image->image, CV_GRAY2RGB);
-
 }
 
 void readCalibFile(const char *calibFilename, ITMRGBDCalib &calib) {
@@ -355,7 +317,6 @@ int main(int argc, char **argv)
     readCalibFile(calibFile, calib);
     
     ITMLibSettings * _internalSettings = new ITMLibSettings(_mu, 10, _voxelSize, _viewFrustum_min, _viewFrustum_max);
-
 
     _mainEngine = new ITMBasicEngine<ITMVoxel, ITMVoxelIndex>(
             _internalSettings, calib, calib.intrinsics_rgb.imgSize, calib.intrinsics_d.imgSize );
